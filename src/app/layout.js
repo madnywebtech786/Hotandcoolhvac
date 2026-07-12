@@ -1,6 +1,7 @@
 import { Sora, Archivo } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import FloatingContact from "./components/FloatingContact";
 import "./globals.css";
 
 const sora = Sora({
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );

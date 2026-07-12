@@ -1,13 +1,92 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Phone, ShieldCheck, Snowflake, Flame, ArrowUpRight } from "lucide-react";
+import { Phone, ShieldCheck, Snowflake, Flame, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
+
+const AUTO_ADVANCE_MS = 6000;
 
 const STATS = [
   { value: "24/7", label: "Emergency response" },
-  { value: "15+", label: "Years serving Calgary" },
+  { value: "6+", label: "Years serving Calgary" },
   { value: "100%", label: "Satisfaction focused" },
 ];
 
+const SLIDES = [
+  {
+    eyebrow: "Serving Calgary & surrounding areas",
+    title: "Comfort you can",
+    accent: "trust",
+    tail: "engineered for every season.",
+    description:
+      "Hot and Cool HVAC delivers precision heating, cooling, and plumbing service across Calgary — honest diagnostics, quality workmanship, and a team that shows up when it matters most.",
+    ctaLabel: "Explore our services",
+    ctaHref: "#services",
+  },
+  {
+    eyebrow: "Furnaces & boilers",
+    title: "Heating that",
+    accent: "never quits",
+    tail: "on Calgary's coldest nights.",
+    description:
+      "From emergency furnace repairs to full high-efficiency installs, our licensed technicians keep your home warm with fast, honest heating service — 24/7, every day of the year.",
+    ctaLabel: "View heating services",
+    ctaHref: "#services",
+  },
+  {
+    eyebrow: "Air conditioning",
+    title: "Cooling built",
+    accent: "for summer",
+    tail: "so your home stays livable.",
+    description:
+      "Right-sized AC installs, fast repairs, and seasonal tune-ups that keep your system efficient and your home cool when Calgary summers hit their peak.",
+    ctaLabel: "View cooling services",
+    ctaHref: "#services",
+  },
+  {
+    eyebrow: "Plumbing",
+    title: "Plumbing fixed",
+    accent: "right",
+    tail: "the first time, every time.",
+    description:
+      "Drain cleaning, water heaters, Poly-B replacement, and emergency leak response — handled by technicians who diagnose the real problem before they touch a wrench.",
+    ctaLabel: "View plumbing services",
+    ctaHref: "#services",
+  },
+  {
+    eyebrow: "24/7 emergency support",
+    title: "One call",
+    accent: "fixes it",
+    tail: "no forms, no waiting on hold.",
+    description:
+      "Heating, cooling, and plumbing emergencies don't wait for business hours, and neither do we. Talk to a real technician, day or night, anywhere in Calgary Metro.",
+    ctaLabel: "See all services",
+    ctaHref: "#services",
+  },
+];
+
 export default function Hero() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const intervalRef = useRef(null);
+  const slide = SLIDES[activeIndex];
+
+  const restartAutoAdvance = () => {
+    window.clearInterval(intervalRef.current);
+    intervalRef.current = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % SLIDES.length);
+    }, AUTO_ADVANCE_MS);
+  };
+
+  useEffect(() => {
+    restartAutoAdvance();
+    return () => window.clearInterval(intervalRef.current);
+  }, []);
+
+  const goTo = (index) => {
+    setActiveIndex((index + SLIDES.length) % SLIDES.length);
+    restartAutoAdvance();
+  };
+
   return (
     <section className="relative overflow-hidden bg-surface">
       {/* Atmosphere layer */}
@@ -22,7 +101,7 @@ export default function Hero() {
 
       <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-32 pb-24 sm:px-8 sm:pt-36 lg:flex-row lg:items-center lg:gap-12 lg:pb-32">
         {/* Copy column */}
-        <div className="relative z-10 flex-1">
+        <div key={activeIndex} className="relative z-10 flex-1">
           <div
             className="animate-rise-in inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface-raised px-4 py-1.5 shadow-soft"
             style={{ animationDelay: "0.05s" }}
@@ -32,7 +111,7 @@ export default function Hero() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-ember-500" />
             </span>
             <span className="font-sans text-sm font-medium tracking-wide text-ink-soft">
-              Serving Calgary &amp; surrounding areas
+              {slide.eyebrow}
             </span>
           </div>
 
@@ -40,10 +119,10 @@ export default function Hero() {
             className="animate-rise-in mt-7 font-display text-5xl font-bold leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-[4rem]"
             style={{ animationDelay: "0.15s" }}
           >
-            Comfort you can
+            {slide.title}
             <span className="relative mx-3 inline-block whitespace-nowrap">
               <span className="text-gradient-brand relative z-10">
-                trust
+                {slide.accent}
               </span>
               <svg
                 className="absolute -bottom-2 left-0 w-full"
@@ -71,16 +150,14 @@ export default function Hero() {
               </svg>
             </span>
             <br />
-            engineered for every season.
+            {slide.tail}
           </h1>
 
           <p
             className="animate-rise-in mt-6 max-w-lg font-sans text-lg leading-relaxed text-ink-soft"
             style={{ animationDelay: "0.25s" }}
           >
-            Hot and Cool HVAC delivers precision heating, cooling, and plumbing
-            service across Calgary — honest diagnostics, quality workmanship,
-            and a team that shows up when it matters most.
+            {slide.description}
           </p>
 
           <div
@@ -97,10 +174,10 @@ export default function Hero() {
             </a>
 
             <a
-              href="#services"
+              href={slide.ctaHref}
               className="group inline-flex items-center justify-center gap-1.5 rounded-full border border-line-strong bg-surface-raised px-7 py-4 font-sans text-sm font-semibold text-ink transition-colors hover:border-arc-500 hover:text-arc-600"
             >
-              Explore our services
+              {slide.ctaLabel}
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
@@ -121,6 +198,42 @@ export default function Hero() {
               </div>
             ))}
           </dl>
+
+          {/* Slide navigation */}
+          <div className="mt-10 flex items-center gap-4">
+            <div className="flex items-center gap-2.5">
+              {SLIDES.map((s, index) => (
+                <button
+                  key={s.title + index}
+                  type="button"
+                  onClick={() => goTo(index)}
+                  aria-label={`View slide ${index + 1}`}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${
+                    index === activeIndex ? "bg-gradient-brand w-8" : "w-1.5 bg-line-strong"
+                  }`}
+                />
+              ))}
+            </div>
+
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => goTo(activeIndex - 1)}
+                aria-label="Previous slide"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-line-strong bg-surface-raised text-ink-soft transition-colors hover:border-arc-500 hover:text-arc-600"
+              >
+                <ChevronLeft className="h-4 w-4" strokeWidth={2.25} />
+              </button>
+              <button
+                type="button"
+                onClick={() => goTo(activeIndex + 1)}
+                aria-label="Next slide"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-line-strong bg-surface-raised text-ink-soft transition-colors hover:border-arc-500 hover:text-arc-600"
+              >
+                <ChevronRight className="h-4 w-4" strokeWidth={2.25} />
+              </button>
+            </div>
+          </div>
         </div>
 
         {/* Visual column */}

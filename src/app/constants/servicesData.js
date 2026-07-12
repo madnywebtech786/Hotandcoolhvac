@@ -71,7 +71,8 @@ export const services = [
         'Professional workmanship focused on safety and reliability.',
         'Clear communication so you understand every repair recommendation.',
         'Respectful, clean service that treats your home with care.',
-        "Committed to restoring your home's comfort as quickly as possible."
+        "Committed to restoring your home's comfort as quickly as possible.",
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -86,7 +87,8 @@ export const services = [
         'Maintain safe operation of your heating system.',
         'Protect important furnace components from additional wear and damage.',
         'Improve airflow and overall heating performance.',
-        'Gain peace of mind knowing your furnace has been professionally inspected and repaired.'
+        'Gain peace of mind knowing your furnace has been professionally inspected and repaired.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -198,7 +200,8 @@ export const services = [
         'Transparent recommendations without unnecessary upselling.',
         'Attention to detail throughout every stage of installation.',
         'Reliable service across Calgary and surrounding communities.',
-        'Committed to helping homeowners enjoy dependable comfort for years to come.'
+        'Committed to helping homeowners enjoy dependable comfort for years to come.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -213,7 +216,8 @@ export const services = [
         'Take advantage of modern heating technology and improved performance.',
         'Extend the lifespan of your HVAC system with professional installation.',
         "Increase confidence that your home is prepared for Calgary's cold winters.",
-        'Add long-term value and comfort to your home.'
+        'Add long-term value and comfort to your home.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -343,7 +347,8 @@ export const services = [
         'Reduce the likelihood of further damage to your heating system.',
         'Gain expert advice and honest repair recommendations.',
         'Enjoy dependable service from experienced HVAC professionals.',
-        'Have peace of mind knowing help is available when you need it most.'
+        'Have peace of mind knowing help is available when you need it most.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -457,7 +462,8 @@ export const services = [
         'Honest recommendations without unnecessary repairs.',
         'Reliable service throughout Calgary and surrounding communities.',
         'Professional workmanship with attention to detail.',
-        'Helping homeowners maximize the lifespan of their heating systems.'
+        'Helping homeowners maximize the lifespan of their heating systems.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -472,7 +478,8 @@ export const services = [
         'Enhance overall furnace reliability.',
         'Maintain safe operation throughout the heating season.',
         'Reduce unnecessary wear on important furnace components.',
-        "Enjoy greater peace of mind during Calgary's winter months."
+        "Enjoy greater peace of mind during Calgary's winter months.",
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -583,7 +590,8 @@ export const services = [
         'Honest recommendations without unnecessary upselling.',
         'Reliable installation services throughout Calgary and surrounding communities.',
         'Quality workmanship focused on long-term reliability.',
-        'Dedicated customer support before, during, and after installation.'
+        'Dedicated customer support before, during, and after installation.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -598,7 +606,8 @@ export const services = [
         'Reduce the likelihood of costly repairs associated with older units.',
         'Increase the lifespan of your cooling system with professional installation.',
         "Increase your home's comfort and overall value.",
-        'Gain peace of mind knowing your system is professionally installed and ready for reliable performance.'
+        'Gain peace of mind knowing your system is professionally installed and ready for reliable performance.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -716,7 +725,8 @@ export const services = [
         'Professional workmanship focused on safety and efficiency.',
         'Transparent communication before every repair.',
         'Respectful service that treats your home with care.',
-        "Committed to restoring your home's comfort as quickly as possible."
+        "Committed to restoring your home's comfort as quickly as possible.",
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -731,7 +741,8 @@ export const services = [
         'Reduce the likelihood of unexpected summer breakdowns.',
         'Improve airflow and overall cooling performance.',
         'Protect valuable system components from additional damage.',
-        'Enjoy peace of mind knowing your AC has been professionally repaired.'
+        'Enjoy peace of mind knowing your AC has been professionally repaired.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -847,7 +858,8 @@ export const services = [
         'Honest recommendations with no unnecessary upselling.',
         'Reliable service throughout Calgary and surrounding communities.',
         'Quality workmanship focused on long-term system performance.',
-        'Helping homeowners protect their cooling investment year after year.'
+        'Helping homeowners protect their cooling investment year after year.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -862,7 +874,8 @@ export const services = [
         'Maintain reliable airflow throughout your home.',
         'Reduce wear on critical system components.',
         'Improve overall cooling performance.',
-        "Enjoy peace of mind knowing your AC is ready for Calgary's summer."
+        "Enjoy peace of mind knowing your AC is ready for Calgary's summer.",
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -973,7 +986,8 @@ export const services = [
         'Quality equipment from trusted manufacturers.',
         'Professional installation available for every system we sell.',
         'Reliable customer support before and after your purchase.',
-        'Committed to helping homeowners make confident, informed decisions.'
+        'Committed to helping homeowners make confident, informed decisions.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -988,7 +1002,8 @@ export const services = [
         "Increase your home's overall value.",
         'Take advantage of modern cooling technology and smart features.',
         'Enjoy reliable performance for years to come.',
-        "Make a long-term investment in your family's comfort."
+        "Make a long-term investment in your family's comfort.",
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1105,7 +1120,8 @@ export const services = [
         'Honest recommendations without unnecessary services.',
         'Clean, respectful workmanship in every home.',
         'Reliable plumbing solutions focused on long-term performance.',
-        'Committed to restoring proper drainage quickly and efficiently.'
+        'Committed to restoring proper drainage quickly and efficiently.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -1120,7 +1136,8 @@ export const services = [
         'Improve the overall performance of your plumbing.',
         'Avoid relying on harsh chemical drain cleaners.',
         'Identify plumbing issues before they become major repairs.',
-        'Enjoy peace of mind knowing your drains are flowing properly.'
+        'Enjoy peace of mind knowing your drains are flowing properly.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1238,7 +1255,8 @@ export const services = [
         'Fast service throughout Calgary and surrounding communities.',
         'Clean, respectful plumbers who protect your home.',
         'High-quality replacement parts and professional installation.',
-        'Committed to restoring reliable bathroom plumbing quickly.'
+        'Committed to restoring reliable bathroom plumbing quickly.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -1253,7 +1271,8 @@ export const services = [
         'Increase plumbing reliability.',
         'Upgrade to a more water-efficient toilet.',
         'Avoid costly plumbing problems in the future.',
-        'Enjoy peace of mind knowing your toilet is professionally repaired or installed.'
+        'Enjoy peace of mind knowing your toilet is professionally repaired or installed.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1386,7 +1405,8 @@ export const services = [
         'Maintain safe boiler operation.',
         'Restore reliable hot water production.',
         'Protect important boiler components from additional damage.',
-        'Enjoy peace of mind knowing your boiler has been professionally repaired.'
+        'Enjoy peace of mind knowing your boiler has been professionally repaired.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1519,7 +1539,8 @@ export const services = [
         'Restore reliable water flow and drainage.',
         'Receive expert diagnosis from experienced plumbers.',
         'Enjoy dependable repairs that last.',
-        'Gain peace of mind knowing professional help is available when you need it most.'
+        'Gain peace of mind knowing professional help is available when you need it most.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1633,7 +1654,8 @@ export const services = [
         'Transparent communication throughout the project.',
         'Reliable service across Calgary and surrounding communities.',
         'Commitment to long-term plumbing reliability.',
-        'Customer-focused service backed by quality craftsmanship.'
+        'Customer-focused service backed by quality craftsmanship.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -1648,7 +1670,8 @@ export const services = [
         'Improve water flow throughout your home.',
         "Increase your property's value and market appeal.",
         'Support smoother home inspections during resale.',
-        'Enjoy long-term peace of mind with professionally installed plumbing.'
+        'Enjoy long-term peace of mind with professionally installed plumbing.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1761,7 +1784,8 @@ export const services = [
         'Professional workmanship that meets current industry standards.',
         'Reliable service throughout Calgary and surrounding communities.',
         'Transparent communication from start to finish.',
-        'Committed to protecting your home with lasting plumbing and heating solutions.'
+        'Committed to protecting your home with lasting plumbing and heating solutions.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -1776,7 +1800,8 @@ export const services = [
         "Increase your home's value and buyer confidence.",
         'Improve heating consistency throughout your home.',
         'Gain greater peace of mind with a professionally upgraded system.',
-        'Invest in a plumbing and heating solution built to last.'
+        'Invest in a plumbing and heating solution built to last.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -1889,7 +1914,8 @@ export const services = [
         'Transparent recommendations with no unnecessary upselling.',
         'Experienced plumbing and water treatment specialists.',
         'Reliable service across Calgary and nearby areas.',
-        'Focused on long-term water quality improvement.'
+        'Focused on long-term water quality improvement.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -1904,7 +1930,8 @@ export const services = [
         'Lower maintenance and repair costs.',
         'Improve energy efficiency of water-using appliances.',
         'Enhance overall home water quality.',
-        'Increase comfort and daily living experience.'
+        'Increase comfort and daily living experience.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -2017,7 +2044,8 @@ export const services = [
         'Experienced plumbing and waterproofing specialists.',
         'Transparent recommendations with no unnecessary upgrades.',
         'Long-term protection against basement flooding.',
-        'Trusted service across Calgary and surrounding areas.'
+        'Trusted service across Calgary and surrounding areas.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -2032,7 +2060,8 @@ export const services = [
         'Increase property value and buyer confidence.',
         'Add peace of mind during storm seasons.',
         'Optional backup protection during power outages.',
-        'Long-term protection for your entire home.'
+        'Long-term protection for your entire home.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -2145,7 +2174,8 @@ export const services = [
         'Honest advice on repair vs replacement.',
         'Emergency repair services available.',
         'Transparent pricing with no hidden costs.',
-        'Trusted service across Calgary and nearby areas.'
+        'Trusted service across Calgary and nearby areas.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -2160,7 +2190,8 @@ export const services = [
         'Eliminate unusual noises and operating issues.',
         'Maintain safe and stable water temperature.',
         'Avoid costly full system replacement.',
-        'Ensure comfort and convenience in daily use.'
+        'Ensure comfort and convenience in daily use.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -2273,7 +2304,8 @@ export const services = [
         'Honest recommendations tailored to your home.',
         'Experienced plumbing and HVAC technicians.',
         'Fast and reliable service across Calgary.',
-        'Focus on long-term system performance and reliability.'
+        'Focus on long-term system performance and reliability.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -2288,7 +2320,8 @@ export const services = [
         'Better performance for large households.',
         'Lower maintenance requirements over time.',
         'Environmentally friendly energy usage.',
-        'Improved home value and modern upgrade appeal.'
+        'Improved home value and modern upgrade appeal.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -2401,7 +2434,8 @@ export const services = [
         'Honest advice on repair vs replacement.',
         'Emergency repair services available.',
         'Transparent pricing with no hidden costs.',
-        'Trusted service across Calgary and nearby areas.'
+        'Trusted service across Calgary and nearby areas.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -2416,7 +2450,8 @@ export const services = [
         'Improve water flow and temperature stability.',
         'Avoid full system replacement costs.',
         'Enhance safety of gas or electric systems.',
-        'Ensure reliable daily hot water usage.'
+        'Ensure reliable daily hot water usage.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [
@@ -2529,7 +2564,8 @@ export const services = [
         'Careful cleaning of entire ventilation system.',
         'Improved HVAC efficiency and performance.',
         'Reliable service across Calgary and surrounding areas.',
-        'Focus on healthier and cleaner indoor environments.'
+        'Focus on healthier and cleaner indoor environments.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
       ]
     },
     benefits: {
@@ -2544,7 +2580,8 @@ export const services = [
         'Lower energy consumption.',
         'Extend lifespan of HVAC system components.',
         'Create a healthier living environment.',
-        'Improve overall home comfort.'
+        'Improve overall home comfort.',
+        '24/7 emergency support whenever you need it most.'
       ]
     },
     faqs: [

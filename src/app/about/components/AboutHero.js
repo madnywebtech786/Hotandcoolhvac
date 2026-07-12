@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const STATS = [
   { value: "24/7", label: "Emergency response" },
-  { value: "15+", label: "Years in Calgary" },
+  { value: "6+", label: "Years in Calgary" },
   { value: "20+", label: "Services offered" },
 ];
 

@@ -5,6 +5,8 @@ const AREAS = [
   "Okotoks",
   "Chestermere",
   "Strathmore",
+  "Canmore",
+  "Nanton",
 ];
 
 export default function WorkingAreas() {
@@ -81,8 +83,8 @@ export default function WorkingAreas() {
           {[
             { label: "Coverage zone", value: "Calgary Metro" },
             { label: "Dispatch", value: "24 / 7" },
-            { label: "Communities served", value: "6+" },
-            { label: "Service types", value: "3 specialties" },
+            { label: "Communities served", value: "8+" },
+            { label: "Service types", value: "4 specialties" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-faint">

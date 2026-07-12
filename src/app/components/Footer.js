@@ -4,6 +4,8 @@ import { CATEGORY_ORDER } from "../constants/serviceMeta";
 
 const NAV_LINKS = [
   { label: "About", href: "/about" },
+  { label: "Mission & Vision", href: "/mission-vision" },
+  { label: "Our Team", href: "/team" },
   { label: "Services", href: "/#services" },
   { label: "Working areas", href: "/#working-areas" },
   { label: "FAQs", href: "/faq" },

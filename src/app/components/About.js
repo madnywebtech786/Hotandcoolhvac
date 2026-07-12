@@ -49,7 +49,7 @@ export default function About() {
               </div>
 
               <div className="absolute -bottom-8 left-6 w-56 rounded-2xl border border-line bg-surface-raised/95 p-5 shadow-lift backdrop-blur-sm sm:left-10">
-                <p className="font-display text-3xl font-bold text-ink">15+</p>
+                <p className="font-display text-3xl font-bold text-ink">6+</p>
                 <p className="mt-1 font-sans text-xs leading-snug text-ink-faint">
                   Years keeping Calgary homes comfortable, year-round.
                 </p>
