@@ -52,7 +52,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact-form" className="relative scroll-mt-28 overflow-hidden bg-surface-alt py-20 sm:py-28">
+    <section id="contact-form" className="relative scroll-mt-36 overflow-hidden bg-surface-alt py-20 sm:py-28">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.35] mask-[radial-gradient(ellipse_70%_50%_at_50%_0%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
@@ -147,7 +147,7 @@ export default function ContactForm() {
                           required
                           value={form.phone}
                           onChange={handleChange("phone")}
-                          placeholder="(403) 555-0199"
+                          placeholder="403-633-6911"
                           className="w-full rounded-2xl border border-line-strong bg-surface py-3.5 pl-11 pr-4 font-sans text-sm text-ink placeholder:text-ink-faint focus:border-arc-500 focus:outline-none"
                         />
                       </span>

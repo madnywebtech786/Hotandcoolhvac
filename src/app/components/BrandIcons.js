@@ -1,4 +1,4 @@
-// Lucide only ships generic glyphs, not brand marks — these are minimal
+// Lucide only ships generic glyphs, not brand marks, so these are minimal
 // inline SVGs for the actual WhatsApp/Facebook/Instagram/TikTok logos,
 // sized and stroked to drop into the same icon slots lucide icons use.
 

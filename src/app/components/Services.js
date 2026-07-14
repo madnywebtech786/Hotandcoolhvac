@@ -15,7 +15,7 @@ export default function Services() {
   );
 
   return (
-    <section id="services" className="relative scroll-mt-28 overflow-hidden bg-surface py-24 sm:py-32">
+    <section id="services" className="relative scroll-mt-36 overflow-hidden bg-surface py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.35] mask-[radial-gradient(ellipse_70%_50%_at_50%_0%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">

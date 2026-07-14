@@ -536,7 +536,7 @@ export const services = [
     },
     hero: {
       title: 'Professional Air Conditioning Installation Services in Calgary',
-      description: "A professionally installed air conditioning system does more than cool your home—it creates a healthier, more comfortable living environment while helping you reduce energy costs and improve efficiency. Whether you're installing air conditioning for the first time, replacing an aging unit, or upgrading to a modern high-efficiency system, Hot and Cool HVAC provides expert air conditioning installation services throughout Calgary and surrounding areas. Our experienced technicians help you choose the right cooling system for your home's size, layout, and comfort needs, ensuring every installation delivers reliable performance for years to come. From selecting the ideal unit to testing the finished installation, we focus on quality workmanship, energy efficiency, and your complete satisfaction."
+      description: "A professionally installed air conditioning system does more than cool your home. It creates a healthier, more comfortable living environment while helping you reduce energy costs and improve efficiency. Whether you're installing air conditioning for the first time, replacing an aging unit, or upgrading to a modern high-efficiency system, Hot and Cool HVAC provides expert air conditioning installation services throughout Calgary and surrounding areas. Our experienced technicians help you choose the right cooling system for your home's size, layout, and comfort needs, ensuring every installation delivers reliable performance for years to come. From selecting the ideal unit to testing the finished installation, we focus on quality workmanship, energy efficiency, and your complete satisfaction."
     },
     content: [
       {
@@ -714,7 +714,7 @@ export const services = [
     ],
     whyChooseUs: {
       title: 'Why Choose Hot and Cool HVAC for Air Conditioning Repair?',
-      description: 'When your cooling system stops working, you need more than a quick fix—you need experienced professionals who can accurately diagnose the problem and provide dependable repairs that last. At Hot and Cool HVAC, we combine technical expertise with honest customer service to ensure every repair restores comfort while protecting the long-term performance of your air conditioning system. From your initial call to the completed repair, our focus is on delivering quality workmanship, clear communication, and reliable cooling solutions you can trust.',
+      description: 'When your cooling system stops working, you need more than a quick fix. You need experienced professionals who can accurately diagnose the problem and provide dependable repairs that last. At Hot and Cool HVAC, we combine technical expertise with honest customer service to ensure every repair restores comfort while protecting the long-term performance of your air conditioning system. From your initial call to the completed repair, our focus is on delivering quality workmanship, clear communication, and reliable cooling solutions you can trust.',
       points: [
         'Experienced HVAC technicians with extensive AC repair expertise.',
         'Repairs for most major air conditioning brands and models.',
@@ -806,7 +806,7 @@ export const services = [
         title: 'Protect Your Cooling System with Preventative Maintenance',
         paragraphs: [
           'Regular air conditioning maintenance is one of the most effective ways to protect your investment and ensure reliable cooling throughout the summer. Just like any mechanical system, your AC experiences normal wear and tear over time. Dust accumulates on critical components, electrical connections loosen, moving parts wear down, and airflow can become restricted, forcing your system to work harder than necessary.',
-          "At Hot and Cool HVAC, our professional AC tune-up service is designed to identify these issues before they develop into expensive repairs or unexpected breakdowns. Our experienced technicians perform a complete inspection of your cooling system, ensuring every major component is operating safely and efficiently. We don't simply perform a quick inspection—we thoroughly evaluate your system's overall condition and make adjustments that help maximize its performance.",
+          "At Hot and Cool HVAC, our professional AC tune-up service is designed to identify these issues before they develop into expensive repairs or unexpected breakdowns. Our experienced technicians perform a complete inspection of your cooling system, ensuring every major component is operating safely and efficiently. We don't simply perform a quick inspection. We thoroughly evaluate your system's overall condition and make adjustments that help maximize its performance.",
           "Routine maintenance not only improves cooling efficiency but also helps maintain consistent indoor temperatures, reduces unnecessary strain on your equipment, and gives homeowners confidence that their air conditioning system is prepared for Calgary's hottest summer days."
         ]
       },
@@ -932,7 +932,7 @@ export const services = [
     },
     hero: {
       title: 'High-Efficiency Air Conditioner Sales in Calgary',
-      description: "Choosing the right air conditioner is an investment in your home's comfort, energy efficiency, and long-term value. Whether you're replacing an outdated cooling system, installing air conditioning for the first time, or upgrading to a high-efficiency model, Hot and Cool HVAC helps homeowners throughout Calgary and surrounding areas find the ideal air conditioning solution. We take the time to understand your home's cooling needs, explain your options, and recommend systems that deliver dependable performance, lower energy consumption, and lasting comfort. Our goal isn't simply to sell equipment—it's to help you make a confident investment that keeps your family comfortable for years to come."
+      description: "Choosing the right air conditioner is an investment in your home's comfort, energy efficiency, and long-term value. Whether you're replacing an outdated cooling system, installing air conditioning for the first time, or upgrading to a high-efficiency model, Hot and Cool HVAC helps homeowners throughout Calgary and surrounding areas find the ideal air conditioning solution. We take the time to understand your home's cooling needs, explain your options, and recommend systems that deliver dependable performance, lower energy consumption, and lasting comfort. Our goal isn't simply to sell equipment. It's to help you make a confident investment that keeps your family comfortable for years to come."
     },
     content: [
       {
@@ -1506,7 +1506,7 @@ export const services = [
       {
         title: 'Reliable Emergency Plumbing You Can Trust',
         paragraphs: [
-          "When you're facing a plumbing emergency, you need more than a quick response—you need experienced professionals who can accurately diagnose the issue and perform dependable repairs. At Hot and Cool HVAC, we prioritize safety, quality workmanship, and transparent communication throughout every emergency service call.",
+          "When you're facing a plumbing emergency, you need more than a quick response. You need experienced professionals who can accurately diagnose the issue and perform dependable repairs. At Hot and Cool HVAC, we prioritize safety, quality workmanship, and transparent communication throughout every emergency service call.",
           'Our technicians explain the problem clearly, discuss available repair options, and work efficiently to restore your plumbing system while helping prevent additional damage. From the moment you call until the repair is complete, our focus is on protecting your home, restoring your comfort, and delivering reliable plumbing solutions you can trust.'
         ]
       }
@@ -1636,7 +1636,7 @@ export const services = [
       {
         title: 'Protect Your Home for Years to Come',
         paragraphs: [
-          "Replacing Poly-B plumbing isn't just about fixing old pipes—it's about protecting your home's value, reducing the risk of unexpected water damage, and giving your family confidence in the reliability of your plumbing system. A professionally completed pipe replacement provides long-term protection while improving the overall performance of your home's water distribution system.",
+          "Replacing Poly-B plumbing isn't just about fixing old pipes. It's about protecting your home's value, reducing the risk of unexpected water damage, and giving your family confidence in the reliability of your plumbing system. A professionally completed pipe replacement provides long-term protection while improving the overall performance of your home's water distribution system.",
           "At Hot and Cool HVAC, we're committed to delivering honest recommendations, exceptional workmanship, and dependable plumbing solutions that homeowners throughout Calgary can trust."
         ]
       }
@@ -2645,7 +2645,7 @@ export const services = [
         title: 'Why Calgary Homes Need a Whole-Home Humidifier',
         paragraphs: [
           "Furnaces heat air, but they don't add moisture back into it. As outdoor temperatures drop through a Calgary winter, the cold air drawn into your home holds very little humidity to begin with, and your furnace dries it out even further as it circulates. The result is indoor humidity that can fall well below comfortable levels, even though the thermostat reads a normal temperature.",
-          "Low indoor humidity isn't just uncomfortable — it can affect your health, your home, and your energy bills. Dry air makes you feel colder at the same temperature, which often leads homeowners to turn the thermostat up and spend more on heating than necessary. A properly sized whole-home humidifier addresses the root cause instead of masking the symptoms."
+          "Low indoor humidity isn't just uncomfortable. It can affect your health, your home, and your energy bills. Dry air makes you feel colder at the same temperature, which often leads homeowners to turn the thermostat up and spend more on heating than necessary. A properly sized whole-home humidifier addresses the root cause instead of masking the symptoms."
         ]
       },
       {
@@ -2729,7 +2729,7 @@ export const services = [
       },
       {
         question: 'Will a humidifier increase my heating bill?',
-        answer: 'No — in most cases it can lower your effective heating cost. Properly humidified air feels warmer at the same temperature, so many homeowners comfortably lower their thermostat a degree or two after installation.'
+        answer: 'No, in most cases it can lower your effective heating cost. Properly humidified air feels warmer at the same temperature, so many homeowners comfortably lower their thermostat a degree or two after installation.'
       },
       {
         question: 'Can a humidifier cause condensation on my windows?',
@@ -2775,7 +2775,7 @@ export const services = [
         title: 'Why Calgary Homeowners Choose Whole-Home Water Purification',
         paragraphs: [
           "Municipal water treatment keeps Calgary's water supply safe, but the same disinfection process that makes water safe to drink can leave a noticeable chlorine taste and smell. Water also picks up trace sediment and minerals as it travels through the municipal system and your home's own plumbing before it reaches your tap.",
-          "A whole-home water purification system is installed at your home's main water line, so every fixture — kitchen sink, bathroom taps, shower, and water-using appliances — receives filtered water, rather than only the one faucet a countertop or pitcher filter can treat."
+          "A whole-home water purification system is installed at your home's main water line, so every fixture (kitchen sink, bathroom taps, shower, and water-using appliances) receives filtered water, rather than only the one faucet a countertop or pitcher filter can treat."
         ]
       },
       {
@@ -2810,7 +2810,7 @@ export const services = [
       {
         title: 'Matching the System to Your Water and Your Home',
         paragraphs: [
-          "Before recommending a system, we discuss what matters most to your household — better-tasting drinking water, reducing chlorine odor throughout the house, protecting plumbing and appliances from sediment, or all three. We size the system to your home's water usage and fixture count so flow and water pressure stay strong at every tap.",
+          "Before recommending a system, we discuss what matters most to your household: better-tasting drinking water, reducing chlorine odor throughout the house, protecting plumbing and appliances from sediment, or all three. We size the system to your home's water usage and fixture count so flow and water pressure stay strong at every tap.",
           "Every installation includes clear guidance on filter change intervals, so your system continues performing as expected long after our technicians leave."
         ]
       }
@@ -2851,7 +2851,7 @@ export const services = [
     faqs: [
       {
         question: 'Is Calgary tap water safe to drink without a purification system?',
-        answer: "Yes, Calgary's municipal water meets safety standards. A whole-home purification system isn't about making water safe — it's about improving taste, odor, and reducing sediment for a better everyday experience."
+        answer: "Yes, Calgary's municipal water meets safety standards. A whole-home purification system isn't about making water safe. It's about improving taste, odor, and reducing sediment for a better everyday experience."
       },
       {
         question: 'What\'s the difference between a whole-home filter and a reverse osmosis system?',

@@ -11,7 +11,7 @@
   --color-ink-soft: #47586a;
   --color-ink-faint: #8695a3;
 
-  /* Steel — structural, technical greys with a cool cast */
+  /* Steel: structural, technical greys with a cool cast */
   --color-steel-50: #f5f7f9;
   --color-steel-100: #e9edf1;
   --color-steel-200: #d3dae1;
@@ -19,21 +19,21 @@
   --color-steel-600: #46586a;
   --color-steel-900: #101a24;
 
-  /* Arc Blue — "cool" system accent */
-  --color-arc-50: #eef7ff;
-  --color-arc-100: #d9edff;
-  --color-arc-300: #7ec4f5;
-  --color-arc-500: #1e88d6;
-  --color-arc-600: #0f6fb8;
-  --color-arc-900: #0a3355;
+  /* Arc Blue: "cool" system accent, matched to the brand logo's teal */
+  --color-arc-50: #eefafc;
+  --color-arc-100: #d6f0f5;
+  --color-arc-300: #7fcbdd;
+  --color-arc-500: #2ba7c4;
+  --color-arc-600: #1f8ca6;
+  --color-arc-900: #0e3a44;
 
-  /* Ember — "hot" system accent */
-  --color-ember-50: #fff3ec;
-  --color-ember-100: #ffe1cf;
-  --color-ember-300: #ff9c5c;
-  --color-ember-500: #ff5f1f;
-  --color-ember-600: #e64a0c;
-  --color-ember-900: #7a2405;
+  /* Ember: "hot" system accent, matched to the brand logo's flame gold */
+  --color-ember-50: #fff6ea;
+  --color-ember-100: #ffe9c7;
+  --color-ember-300: #ffc170;
+  --color-ember-500: #f5941f;
+  --color-ember-600: #d97d0c;
+  --color-ember-900: #7a4304;
 
   /* Borders / lines */
   --color-line: #e1e6ea;
@@ -112,7 +112,7 @@ body {
   display: none;
 }
 
-/* Shared "hot to cool" gradient — the signature accent for headings and key emphasis.
+/* Shared "hot to cool" gradient: the signature accent for headings and key emphasis.
    Interpolated in OKLCH (in the longer hue direction) so the hue sweeps smoothly
    through the color wheel instead of muddying through grey/brown at the midpoint. */
 .text-gradient-brand {
@@ -120,7 +120,7 @@ body {
     90deg,
     var(--color-ember-600) 0%,
     var(--color-ember-500) 30%,
-    oklch(70% 0.19 350) 50%,
+    oklch(78% 0.16 25) 50%,
     var(--color-arc-300) 72%,
     var(--color-arc-500) 100%
   );
@@ -134,13 +134,20 @@ body {
   color: transparent;
 }
 
-/* Solid-fill variant (buttons, icon chips) */
+/* Solid-fill variant (buttons, icon chips), same 5-stop sweep as
+   text-gradient-brand (ember -> pink-ish midpoint -> arc), plotted explicitly
+   rather than relying on "oklch longer hue" support, since that syntax's
+   fallback direction swings through purple/magenta instead of the intended
+   orange-to-teal arc when unsupported. */
 .bg-gradient-brand {
-  background-color: #ff5f1f;
+  background-color: #f5941f;
   background-image: linear-gradient(
     150deg,
-    rgba(255, 95, 31, 1) 0%,
-    rgba(15, 111, 184, 0.76) 100%
+    var(--color-ember-600) 0%,
+    var(--color-ember-500) 30%,
+    oklch(78% 0.16 25) 50%,
+    var(--color-arc-300) 72%,
+    var(--color-arc-500) 100%
   );
 }
 
@@ -194,7 +201,7 @@ body {
   to { transform: scaleX(1); }
 }
 
-/* Current "flowing" along a circuit trace — used on the Deals page schematic lines. */
+/* Current "flowing" along a circuit trace, used on the Deals page schematic lines. */
 @keyframes circuit-flow {
   to {
     stroke-dashoffset: -24;

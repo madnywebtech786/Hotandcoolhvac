@@ -1,0 +1,33 @@
+export const siteConfig = {
+  name: "Hot and Cool HVAC",
+  legalName: "Hot and Cool HVAC Ltd.",
+  shortName: "Hot and Cool",
+  tagline: "Calgary Heating, Cooling & Plumbing Experts",
+  url: "https://www.hotandcoolhvac.ca",
+  phone: "+14036336911",
+  phoneDisplay: "403-633-6911",
+  email: "hotandcoolhvacltd@gmail.com",
+  areaServed: [
+    "Calgary",
+    "Airdrie",
+    "Cochrane",
+    "Okotoks",
+    "Chestermere",
+    "Strathmore",
+    "Canmore",
+    "Nanton",
+  ],
+  social: {
+    instagram: "https://www.instagram.com/hotandcoolhvac",
+    tiktok: "https://www.tiktok.com/@hot.and.cool.hvac",
+    facebook: "https://www.facebook.com/share/1Tauz8wWGv/",
+  },
+  sameAs: [
+    "https://www.instagram.com/hotandcoolhvac",
+    "https://www.tiktok.com/@hot.and.cool.hvac",
+    "https://www.facebook.com/share/1Tauz8wWGv/",
+  ],
+  addressRegion: "AB",
+  addressCountry: "CA",
+  logo: "/images/logo.png",
+};

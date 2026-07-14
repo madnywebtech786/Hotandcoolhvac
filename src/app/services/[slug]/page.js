@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { services } from "../../constants/servicesData";
+import { buildServiceJsonLd, buildFaqPageJsonLd, buildBreadcrumbJsonLd } from "../../lib/jsonLd";
 import ServiceHero from "./components/ServiceHero";
 import ServiceContent from "./components/ServiceContent";
 import ServiceWhyChooseUs from "./components/ServiceWhyChooseUs";
@@ -22,6 +23,15 @@ export async function generateMetadata({ params }) {
   return {
     title: service.seo.metaTitle,
     description: service.seo.metaDescription,
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
+    openGraph: {
+      title: service.seo.metaTitle,
+      description: service.seo.metaDescription,
+      url: `/services/${slug}`,
+      images: [`/images/services/${slug}.webp`],
+    },
   };
 }
 
@@ -33,8 +43,26 @@ export default async function ServicePage({ params }) {
     notFound();
   }
 
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/#services" },
+    { name: service.title, path: `/services/${service.slug}` },
+  ]);
+
   return (
     <div className="flex flex-1 flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildServiceJsonLd(service) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: buildFaqPageJsonLd(service.faqs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }}
+      />
       <ServiceHero service={service} />
       <ServiceContent service={service} />
       <ServiceWhyChooseUs service={service} />

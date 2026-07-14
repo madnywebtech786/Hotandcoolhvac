@@ -6,6 +6,9 @@ export const metadata = {
   title: "Our Team | Hot and Cool HVAC",
   description:
     "Meet the licensed, background-checked heating, cooling, and plumbing technicians behind Hot and Cool HVAC's service across Calgary.",
+  alternates: {
+    canonical: "/team",
+  },
 };
 
 export default function TeamPage() {

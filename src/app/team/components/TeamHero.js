@@ -2,7 +2,7 @@ import { Users } from "lucide-react";
 
 export default function TeamHero() {
   return (
-    <section className="relative overflow-hidden bg-surface pt-32 pb-16 sm:pt-40 sm:pb-20">
+    <section className="relative overflow-hidden bg-surface pt-36 pb-16 sm:pt-48 sm:pb-20">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-grid opacity-[0.4] mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
         <div className="animate-drift absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-arc-100/70 blur-3xl" />

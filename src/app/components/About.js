@@ -12,7 +12,7 @@ const FEATURES = [
     icon: Clock3,
     title: "Always available",
     description:
-      "Furnaces don't wait for business hours — neither do we. Round-the-clock emergency support across Calgary.",
+      "Furnaces don't wait for business hours, and neither do we. Round-the-clock emergency support across Calgary.",
   },
   {
     icon: BadgeCheck,
@@ -30,7 +30,7 @@ const FEATURES = [
 
 export default function About() {
   return (
-    <section id="about" className="relative scroll-mt-28 overflow-hidden bg-surface-alt py-24 sm:py-32">
+    <section id="about" className="relative scroll-mt-36 overflow-hidden bg-surface-alt py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.35] mask-[radial-gradient(ellipse_70%_50%_at_50%_100%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
@@ -40,7 +40,7 @@ export default function About() {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="relative aspect-5/4 overflow-hidden rounded-4xl border border-line shadow-lift">
                 <Image
-                  src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?q=80&w=1200&auto=format&fit=crop"
+                  src="/images/about-landing.webp"
                   alt="Hot and Cool HVAC technician inspecting a residential furnace unit"
                   fill
                   sizes="(min-width: 1024px) 45vw, 90vw"
@@ -84,7 +84,7 @@ export default function About() {
               plumbing company built around one goal: dependable comfort,
               delivered honestly. From emergency furnace repairs on the
               coldest nights to full air conditioning installs before summer
-              hits, our technicians treat every home like their own —
+              hits, our technicians treat every home like their own, with
               accurate diagnostics, quality parts, and clear communication
               from first call to final walkthrough.
             </p>

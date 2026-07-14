@@ -5,7 +5,10 @@ import AboutCta from "../about/components/AboutCta";
 export const metadata = {
   title: "Mission & Vision | Hot and Cool HVAC",
   description:
-    "The mission, vision, and values behind Hot and Cool HVAC — honest diagnostics, precision workmanship, and dependable heating, cooling, and plumbing service for Calgary homeowners.",
+    "The mission, vision, and values behind Hot and Cool HVAC: honest diagnostics, precision workmanship, and dependable heating, cooling, and plumbing service for Calgary homeowners.",
+  alternates: {
+    canonical: "/mission-vision",
+  },
 };
 
 export default function MissionVisionPage() {

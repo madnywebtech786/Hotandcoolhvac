@@ -6,6 +6,9 @@ export const metadata = {
   title: "Contact Us | Hot and Cool HVAC",
   description:
     "Request heating, cooling, or plumbing service from Hot and Cool HVAC in Calgary. Call directly for emergencies, or send your details online and we'll follow up to schedule your visit.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

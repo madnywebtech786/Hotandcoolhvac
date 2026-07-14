@@ -2,7 +2,7 @@ import { Phone, Radio } from "lucide-react";
 
 export default function ContactHero() {
   return (
-    <section className="relative overflow-hidden bg-surface pt-32 pb-16 sm:pt-40 sm:pb-20">
+    <section className="relative overflow-hidden bg-surface pt-36 pb-16 sm:pt-48 sm:pb-20">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-grid opacity-[0.4] mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
         <div className="animate-drift absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-arc-100/70 blur-3xl" />
@@ -40,7 +40,7 @@ export default function ContactHero() {
               className="animate-rise-in mt-6 max-w-lg font-sans text-lg leading-relaxed text-ink-soft"
               style={{ animationDelay: "0.25s" }}
             >
-              Tell us what's going on and where you're located — we'll follow
+              Tell us what's going on and where you're located, and we'll follow
               up to schedule your service. For anything urgent, calling
               directly is always the fastest route to a technician.
             </p>
@@ -48,7 +48,7 @@ export default function ContactHero() {
 
           {/* Direct-line console card */}
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             className="animate-rise-in group relative w-full max-w-sm shrink-0 overflow-hidden rounded-3xl border border-white/10 bg-ink p-6 shadow-lift transition-transform duration-300 hover:-translate-y-1"
             style={{ animationDelay: "0.35s" }}
           >
@@ -68,7 +68,7 @@ export default function ContactHero() {
               </span>
               <span>
                 <span className="block font-display text-2xl font-bold text-white">
-                  (403) 555-0199
+                  403-633-6911
                 </span>
                 <span className="mt-0.5 block font-sans text-xs text-white/50">
                   Available 24/7 for emergencies

@@ -2,9 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Phone, ArrowUpRight, ChevronDown, User, Target, Users } from "lucide-react";
 import { services } from "../constants/servicesData";
 import { CATEGORY_ORDER, SERVICE_ICONS } from "../constants/serviceMeta";
+import TopBar from "./TopBar";
 
 const ABOUT_LINKS = [
   { label: "About Us", href: "/about", description: "Our story, mission & values", icon: User },
@@ -16,6 +18,7 @@ const HOME_LINK = { label: "Home", href: "/" };
 
 const NAV_LINKS = [
   { label: "Deals", href: "/deals" },
+  { label: "Gallery", href: "/gallery" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -91,176 +94,197 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-4 z-50 mx-auto w-full max-w-7xl px-4 sm:top-6 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4 rounded-full border border-line bg-surface-raised/80 py-3 pl-5 pr-3 shadow-lift backdrop-blur-md">
-          <Link href="/" className="font-display text-lg font-bold tracking-tight text-ink">
-            Hot<span className="text-gradient-brand">&amp;</span>Cool
-          </Link>
+      <header className="fixed inset-x-0 top-0 z-50 w-full">
+        <TopBar />
 
-          <nav className="hidden items-center gap-1 lg:flex">
-            <Link
-              href={HOME_LINK.href}
-              className="rounded-full px-4 py-2 font-sans text-sm font-medium text-ink-soft transition-colors duration-200 hover:bg-surface-alt hover:text-ink"
-            >
-              {HOME_LINK.label}
+        <div className="border-b border-line bg-surface-raised/95 shadow-soft backdrop-blur-md">
+          <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3 lg:px-8">
+            <Link href="/" className="flex items-center gap-2.5">
+              <Image
+                src="/images/logo.png"
+                alt="Hot and Cool HVAC"
+                width={160}
+                height={180}
+                priority
+                className="-mt-2 h-14 w-auto sm:-mt-2.5 sm:h-16"
+              />
+              <span className="flex flex-col justify-center">
+                <span className="font-display text-lg font-bold leading-none tracking-tight sm:text-xl">
+                  <span className="text-gradient-brand">Hot</span>
+                  <span className="text-ink mx-1">&amp;</span>
+                  <span className="text-gradient-brand">Cool</span>
+                </span>
+                <span className="mt-1 block font-sans text-[10px] font-semibold uppercase tracking-[0.2em] text-ink-faint">
+                  HVAC
+                </span>
+              </span>
             </Link>
 
-            {/* About dropdown */}
-            <div
-              ref={aboutRef}
-              className="relative"
-              onMouseEnter={openAboutMenu}
-              onMouseLeave={scheduleCloseAboutMenu}
-            >
-              <button
-                type="button"
-                onClick={() => setIsAboutOpen((open) => !open)}
-                aria-expanded={isAboutOpen}
-                className={`flex items-center gap-1.5 rounded-full px-4 py-2 font-sans text-sm font-medium transition-colors duration-200 ${
-                  isAboutOpen ? "bg-surface-alt text-ink" : "text-ink-soft hover:bg-surface-alt hover:text-ink"
-                }`}
-              >
-                About
-                <ChevronDown
-                  className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                    isAboutOpen ? "rotate-180" : ""
-                  }`}
-                  strokeWidth={2.25}
-                />
-              </button>
-
-              <div
-                className={`absolute left-1/2 top-full z-20 mt-3 w-80 -translate-x-1/2 origin-top rounded-3xl border border-line bg-surface-raised p-3 shadow-lift transition-all duration-200 ${
-                  isAboutOpen
-                    ? "pointer-events-auto scale-100 opacity-100"
-                    : "pointer-events-none scale-95 opacity-0"
-                }`}
-              >
-                <div className="flex flex-col gap-1">
-                  {ABOUT_LINKS.map((link) => (
-                    <Link
-                      key={link.label}
-                      href={link.href}
-                      onClick={() => setIsAboutOpen(false)}
-                      className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-surface-alt"
-                    >
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-line-strong bg-surface text-ink-soft transition-colors duration-150 group-hover:border-arc-300 group-hover:text-arc-600">
-                        <link.icon className="h-4 w-4" strokeWidth={2} />
-                      </span>
-                      <span>
-                        <span className="block font-sans text-sm font-medium text-ink">
-                          {link.label}
-                        </span>
-                        <span className="block font-sans text-xs text-ink-faint">
-                          {link.description}
-                        </span>
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Services dropdown */}
-            <div
-              ref={servicesRef}
-              className="relative"
-              onMouseEnter={openServicesMenu}
-              onMouseLeave={scheduleCloseServicesMenu}
-            >
-              <button
-                type="button"
-                onClick={() => setIsServicesOpen((open) => !open)}
-                aria-expanded={isServicesOpen}
-                className={`flex items-center gap-1.5 rounded-full px-4 py-2 font-sans text-sm font-medium transition-colors duration-200 ${
-                  isServicesOpen ? "bg-surface-alt text-ink" : "text-ink-soft hover:bg-surface-alt hover:text-ink"
-                }`}
-              >
-                Services
-                <ChevronDown
-                  className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                    isServicesOpen ? "rotate-180" : ""
-                  }`}
-                  strokeWidth={2.25}
-                />
-              </button>
-
-              <div
-                className={`absolute left-1/2 top-full z-20 mt-3 w-xl -translate-x-1/2 origin-top rounded-3xl border border-line bg-surface-raised p-3 shadow-lift transition-all duration-200 ${
-                  isServicesOpen
-                    ? "pointer-events-auto scale-100 opacity-100"
-                    : "pointer-events-none scale-95 opacity-0"
-                }`}
-              >
-                <div className="grid max-h-104 grid-cols-2 gap-1 overflow-y-auto p-1">
-                  {CATEGORY_ORDER.map((category) => (
-                    <div key={category} className="mb-1">
-                      <p className="px-3 pb-1 pt-2 font-sans text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
-                        {category}
-                      </p>
-                      {SERVICES_BY_CATEGORY[category].map((service) => {
-                        const Icon = SERVICE_ICONS[service.slug];
-                        return (
-                          <Link
-                            key={service.slug}
-                            href={`/services/${service.slug}`}
-                            onClick={() => setIsServicesOpen(false)}
-                            className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-surface-alt"
-                          >
-                            {Icon ? (
-                              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-line-strong bg-surface text-ink-soft transition-colors duration-150 group-hover:border-arc-300 group-hover:text-arc-600">
-                                <Icon className="h-4 w-4" strokeWidth={2} />
-                              </span>
-                            ) : null}
-                            <span className="font-sans text-sm font-medium text-ink">
-                              {service.title}
-                            </span>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  ))}
-                </div>
-
-                <Link
-                  href="/#services"
-                  onClick={() => setIsServicesOpen(false)}
-                  className="mt-1 flex items-center justify-center gap-1.5 rounded-2xl bg-surface-alt px-4 py-3 font-sans text-sm font-semibold text-ink-soft transition-colors hover:text-arc-600"
-                >
-                  View all services
-                  <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.25} />
-                </Link>
-              </div>
-            </div>
-
-            {NAV_LINKS.map((link) => (
+            <nav className="hidden items-center gap-1 lg:flex">
               <Link
-                key={link.label}
-                href={link.href}
+                href={HOME_LINK.href}
                 className="rounded-full px-4 py-2 font-sans text-sm font-medium text-ink-soft transition-colors duration-200 hover:bg-surface-alt hover:text-ink"
               >
-                {link.label}
+                {HOME_LINK.label}
               </Link>
-            ))}
-          </nav>
 
-          <div className="flex items-center gap-2">
-            <a
-              href="tel:+14035550199"
-              className="bg-gradient-brand hidden items-center gap-2 rounded-full px-5 py-2.5 font-sans text-sm font-semibold text-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 sm:inline-flex"
-            >
-              <Phone className="h-3.5 w-3.5" strokeWidth={2.25} />
-              (403) 555-0199
-            </a>
+              {/* About dropdown */}
+              <div
+                ref={aboutRef}
+                className="relative"
+                onMouseEnter={openAboutMenu}
+                onMouseLeave={scheduleCloseAboutMenu}
+              >
+                <button
+                  type="button"
+                  onClick={() => setIsAboutOpen((open) => !open)}
+                  aria-expanded={isAboutOpen}
+                  className={`flex items-center gap-1.5 rounded-full px-4 py-2 font-sans text-sm font-medium transition-colors duration-200 ${
+                    isAboutOpen ? "bg-surface-alt text-ink" : "text-ink-soft hover:bg-surface-alt hover:text-ink"
+                  }`}
+                >
+                  About
+                  <ChevronDown
+                    className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                      isAboutOpen ? "rotate-180" : ""
+                    }`}
+                    strokeWidth={2.25}
+                  />
+                </button>
 
-            <button
-              type="button"
-              onClick={() => setIsDrawerOpen(true)}
-              aria-label="Open menu"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-line-strong text-ink transition-colors hover:bg-surface-alt lg:hidden"
-            >
-              <Menu className="h-5 w-5" strokeWidth={2} />
-            </button>
+                <div
+                  className={`absolute left-1/2 top-full z-20 mt-3 w-80 -translate-x-1/2 origin-top rounded-3xl border border-line bg-surface-raised p-3 shadow-lift transition-all duration-200 ${
+                    isAboutOpen
+                      ? "pointer-events-auto scale-100 opacity-100"
+                      : "pointer-events-none scale-95 opacity-0"
+                  }`}
+                >
+                  <div className="flex flex-col gap-1">
+                    {ABOUT_LINKS.map((link) => (
+                      <Link
+                        key={link.label}
+                        href={link.href}
+                        onClick={() => setIsAboutOpen(false)}
+                        className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-surface-alt"
+                      >
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-line-strong bg-surface text-ink-soft transition-colors duration-150 group-hover:border-arc-300 group-hover:text-arc-600">
+                          <link.icon className="h-4 w-4" strokeWidth={2} />
+                        </span>
+                        <span>
+                          <span className="block font-sans text-sm font-medium text-ink">
+                            {link.label}
+                          </span>
+                          <span className="block font-sans text-xs text-ink-faint">
+                            {link.description}
+                          </span>
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Services dropdown */}
+              <div
+                ref={servicesRef}
+                className="relative"
+                onMouseEnter={openServicesMenu}
+                onMouseLeave={scheduleCloseServicesMenu}
+              >
+                <button
+                  type="button"
+                  onClick={() => setIsServicesOpen((open) => !open)}
+                  aria-expanded={isServicesOpen}
+                  className={`flex items-center gap-1.5 rounded-full px-4 py-2 font-sans text-sm font-medium transition-colors duration-200 ${
+                    isServicesOpen ? "bg-surface-alt text-ink" : "text-ink-soft hover:bg-surface-alt hover:text-ink"
+                  }`}
+                >
+                  Services
+                  <ChevronDown
+                    className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                      isServicesOpen ? "rotate-180" : ""
+                    }`}
+                    strokeWidth={2.25}
+                  />
+                </button>
+
+                <div
+                  className={`absolute left-1/2 top-full z-20 mt-3 w-xl -translate-x-1/2 origin-top rounded-3xl border border-line bg-surface-raised p-3 shadow-lift transition-all duration-200 ${
+                    isServicesOpen
+                      ? "pointer-events-auto scale-100 opacity-100"
+                      : "pointer-events-none scale-95 opacity-0"
+                  }`}
+                >
+                  <div className="grid max-h-104 grid-cols-2 gap-1 overflow-y-auto p-1">
+                    {CATEGORY_ORDER.map((category) => (
+                      <div key={category} className="mb-1">
+                        <p className="px-3 pb-1 pt-2 font-sans text-[11px] font-semibold uppercase tracking-wider text-ink-faint">
+                          {category}
+                        </p>
+                        {SERVICES_BY_CATEGORY[category].map((service) => {
+                          const Icon = SERVICE_ICONS[service.slug];
+                          return (
+                            <Link
+                              key={service.slug}
+                              href={`/services/${service.slug}`}
+                              onClick={() => setIsServicesOpen(false)}
+                              className="group flex items-center gap-3 rounded-xl px-3 py-2.5 transition-colors duration-150 hover:bg-surface-alt"
+                            >
+                              {Icon ? (
+                                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-line-strong bg-surface text-ink-soft transition-colors duration-150 group-hover:border-arc-300 group-hover:text-arc-600">
+                                  <Icon className="h-4 w-4" strokeWidth={2} />
+                                </span>
+                              ) : null}
+                              <span className="font-sans text-sm font-medium text-ink">
+                                {service.title}
+                              </span>
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    ))}
+                  </div>
+
+                  <Link
+                    href="/#services"
+                    onClick={() => setIsServicesOpen(false)}
+                    className="mt-1 flex items-center justify-center gap-1.5 rounded-2xl bg-surface-alt px-4 py-3 font-sans text-sm font-semibold text-ink-soft transition-colors hover:text-arc-600"
+                  >
+                    View all services
+                    <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.25} />
+                  </Link>
+                </div>
+              </div>
+
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="rounded-full px-4 py-2 font-sans text-sm font-medium text-ink-soft transition-colors duration-200 hover:bg-surface-alt hover:text-ink"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+
+            <div className="flex items-center gap-2">
+              <a
+                href="tel:+14036336911"
+                className="bg-gradient-brand hidden items-center gap-2 rounded-full px-5 py-2.5 font-sans text-sm font-semibold text-white shadow-soft transition-transform duration-300 hover:-translate-y-0.5 sm:inline-flex"
+              >
+                <Phone className="h-3.5 w-3.5" strokeWidth={2.25} />
+                403-633-6911
+              </a>
+
+              <button
+                type="button"
+                onClick={() => setIsDrawerOpen(true)}
+                aria-label="Open menu"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-line-strong text-ink transition-colors hover:bg-surface-alt lg:hidden"
+              >
+                <Menu className="h-5 w-5" strokeWidth={2} />
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -286,8 +310,19 @@ export default function Navbar() {
         <div className="pointer-events-none absolute inset-0 bg-grid opacity-30" />
 
         <div className="relative flex items-center justify-between border-b border-line px-6 py-5">
-          <span className="font-display text-lg font-bold tracking-tight text-ink">
-            Hot<span className="text-gradient-brand">&amp;</span>Cool
+          <span className="flex items-center gap-2">
+            <Image
+              src="/images/logo.png"
+              alt="Hot and Cool HVAC"
+              width={120}
+              height={135}
+              className="-mt-1.5 h-11 w-auto"
+            />
+            <span className="font-display text-base font-bold leading-none tracking-tight">
+              <span className="text-gradient-brand">Hot</span>
+              <span className="text-ink mx-1">&amp;</span>
+              <span className="text-gradient-brand">Cool</span>
+            </span>
           </span>
           <button
             type="button"
@@ -421,12 +456,12 @@ export default function Navbar() {
 
         <div className="relative border-t border-line p-4">
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             onClick={closeDrawer}
             className="bg-gradient-brand flex items-center justify-center gap-2.5 rounded-full px-6 py-4 font-sans text-sm font-semibold text-white shadow-lift"
           >
             <Phone className="h-4 w-4" strokeWidth={2.25} />
-            (403) 555-0199
+            403-633-6911
           </a>
           <p className="mt-3 text-center font-sans text-xs text-ink-faint">
             Available 24/7 for emergencies

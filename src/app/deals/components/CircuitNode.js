@@ -1,4 +1,4 @@
-// A glowing junction node on the circuit trace — reused for the icon anchor
+// A glowing junction node on the circuit trace, reused for the icon anchor
 // and the terminal endpoint of each deal's schematic.
 export default function CircuitNode({ children, size = "lg" }) {
   const dimensions = size === "lg" ? "h-16 w-16" : "h-10 w-10";

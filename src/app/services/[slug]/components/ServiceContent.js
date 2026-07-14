@@ -68,7 +68,7 @@ export default function ServiceContent({ service }) {
             })}
           </div>
 
-          {/* Sidebar — stays pinned in view while the article scrolls */}
+          {/* Sidebar, stays pinned in view while the article scrolls */}
           <aside className="lg:col-span-1">
             <div className="flex flex-col gap-5 lg:sticky lg:top-28">
               <div className="relative overflow-hidden rounded-4xl border border-line bg-ink p-7 shadow-lift">
@@ -83,11 +83,11 @@ export default function ServiceContent({ service }) {
                     Talk to a technician now.
                   </p>
                   <a
-                    href="tel:+14035550199"
+                    href="tel:+14036336911"
                     className="bg-gradient-brand mt-6 flex items-center justify-center gap-2.5 rounded-full px-6 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
                   >
                     <Phone className="h-4 w-4" strokeWidth={2.25} />
-                    (403) 555-0199
+                    403-633-6911
                   </a>
                   <p className="mt-3 text-center font-sans text-xs text-white/40">
                     Available 24/7 for emergencies

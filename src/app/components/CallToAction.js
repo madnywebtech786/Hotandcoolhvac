@@ -41,7 +41,7 @@ export default function CallToAction() {
 
             <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
               <a
-                href="tel:+14035550199"
+                href="tel:+14036336911"
                 className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/3 p-8 backdrop-blur-sm transition-colors duration-300 hover:border-white/20"
               >
                 <div className="bg-gradient-brand flex h-12 w-12 items-center justify-center rounded-2xl shadow-lift">
@@ -53,7 +53,7 @@ export default function CallToAction() {
                     Fastest response
                   </p>
                   <p className="mt-2 flex items-center gap-2 font-display text-2xl font-bold text-white">
-                    (403) 555-0199
+                    403-633-6911
                     <ArrowUpRight className="h-5 w-5 text-white/50 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </p>
                   <p className="mt-1 font-sans text-sm text-white/50">

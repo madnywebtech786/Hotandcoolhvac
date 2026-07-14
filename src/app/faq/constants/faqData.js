@@ -1,7 +1,7 @@
 import { Flame, Snowflake, Droplets, Wind, LayoutGrid } from "lucide-react";
 
 // Category-level FAQ content, written fresh rather than reused from the
-// per-service FAQ lists in servicesData.js — those are service-specific
+// per-service FAQ lists in servicesData.js. Those are service-specific
 // ("do you repair all furnace brands"), these are category-wide concerns
 // a homeowner has before they've even picked a service.
 export const FAQ_CATEGORIES = [
@@ -34,7 +34,7 @@ export const FAQ_CATEGORIES = [
       {
         question: "How much will my service call cost?",
         answer:
-          "Every home and issue is different, so we provide clear, upfront pricing before any work begins — no hidden fees and no surprises on the invoice. You'll always know the cost and what it covers before we start.",
+          "Every home and issue is different, so we provide clear, upfront pricing before any work begins, with no hidden fees and no surprises on the invoice. You'll always know the cost and what it covers before we start.",
       },
       {
         question: "Are your technicians licensed and insured?",
@@ -72,17 +72,17 @@ export const FAQ_CATEGORIES = [
       {
         question: "Why does my heating bill keep climbing even though I haven't changed anything?",
         answer:
-          "Rising bills usually point to declining efficiency — clogged filters, aging components, or a system working harder than it should. A diagnostic visit can identify exactly what's driving the increase.",
+          "Rising bills usually point to declining efficiency: clogged filters, aging components, or a system working harder than it should. A diagnostic visit can identify exactly what's driving the increase.",
       },
       {
         question: "How long does a furnace or boiler typically last?",
         answer:
-          "Most furnaces last 15 to 20 years and boilers can last even longer with proper maintenance. Age alone isn't always a reason to replace — we'll assess your system's actual condition before recommending anything.",
+          "Most furnaces last 15 to 20 years and boilers can last even longer with proper maintenance. Age alone isn't always a reason to replace. We'll assess your system's actual condition before recommending anything.",
       },
       {
         question: "What's the difference between repairing and replacing my heating system?",
         answer:
-          "It comes down to age, repair history, and efficiency. If your system is older, has needed frequent repairs, or is significantly less efficient than newer models, replacement often makes better long-term financial sense — we'll walk you through the real numbers either way.",
+          "It comes down to age, repair history, and efficiency. If your system is older, has needed frequent repairs, or is significantly less efficient than newer models, replacement often makes better long-term financial sense. We'll walk you through the real numbers either way.",
       },
       {
         question: "Is it normal for my furnace to make noise when it starts up?",
@@ -105,17 +105,17 @@ export const FAQ_CATEGORIES = [
       {
         question: "What size air conditioner do I need for my home?",
         answer:
-          "Sizing depends on your home's square footage, layout, insulation, and window exposure — not just a rule of thumb. We calculate proper sizing so your system cools evenly without short-cycling or wasting energy.",
+          "Sizing depends on your home's square footage, layout, insulation, and window exposure, not just a rule of thumb. We calculate proper sizing so your system cools evenly without short-cycling or wasting energy.",
       },
       {
         question: "Why is my AC running but not cooling the house?",
         answer:
-          "This is usually caused by low refrigerant, a dirty condenser coil, a failing compressor, or airflow restrictions. It's rarely something to diagnose over the phone — a technician can pinpoint the cause quickly on-site.",
+          "This is usually caused by low refrigerant, a dirty condenser coil, a failing compressor, or airflow restrictions. It's rarely something to diagnose over the phone, so a technician can pinpoint the cause quickly on-site.",
       },
       {
         question: "How often should I change my air filter?",
         answer:
-          "Most households should change their filter every 1 to 3 months, more often if you have pets or run your system heavily during summer. A clogged filter is one of the most common — and most avoidable — causes of cooling problems.",
+          "Most households should change their filter every 1 to 3 months, more often if you have pets or run your system heavily during summer. A clogged filter is one of the most common, and most avoidable, causes of cooling problems.",
       },
       {
         question: "Is it worth upgrading to a high-efficiency air conditioner?",
@@ -181,7 +181,7 @@ export const FAQ_CATEGORIES = [
       {
         question: "Does a water softener really make a difference?",
         answer:
-          "In hard water areas like Calgary, yes — a softener protects your pipes, water heater, and appliances from mineral buildup, extending their lifespan and improving efficiency, while also making soaps and detergents work better.",
+          "In hard water areas like Calgary, yes. A softener protects your pipes, water heater, and appliances from mineral buildup, extending their lifespan and improving efficiency, while also making soaps and detergents work better.",
       },
       {
         question: "What's the benefit of a sump pump if my basement has never flooded?",

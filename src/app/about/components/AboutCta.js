@@ -19,11 +19,11 @@ export default function AboutCta() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             className="bg-gradient-brand group inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
           >
             <Phone className="h-4 w-4" strokeWidth={2.25} />
-            Call (403) 555-0199
+            Call 403-633-6911
           </a>
 
           <a

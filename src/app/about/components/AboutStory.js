@@ -11,8 +11,8 @@ export default function AboutStory() {
           <div className="relative order-2 lg:order-1">
             <div className="relative mx-auto aspect-4/5 max-w-lg overflow-hidden rounded-4xl border border-line shadow-lift lg:max-w-none">
               <Image
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop"
-                alt="Hot and Cool HVAC technician diagnosing a heating system in Calgary"
+                src="/images/ourstory.webp"
+                alt="Hot and Cool HVAC technicians working on ductwork in a Calgary home"
                 fill
                 sizes="(min-width: 1024px) 45vw, 90vw"
                 className="object-cover"
@@ -36,20 +36,20 @@ export default function AboutStory() {
             <div className="mt-6 space-y-5 font-sans text-lg leading-relaxed text-ink-soft">
               <p>
                 Too many HVAC and plumbing calls end with more confusion than
-                answers — vague diagnoses, pressure to replace equipment that
+                answers: vague diagnoses, pressure to replace equipment that
                 didn't need replacing. Hot and Cool HVAC was built to work
                 differently.
               </p>
               <p>
                 Every technician who walks into your home is trained to
                 diagnose the actual problem first, explain it in plain
-                language, and recommend the repair that makes sense — not
+                language, and recommend the repair that makes sense, not
                 the one that pads the invoice.
               </p>
               <p>
-                Today, that standard runs through everything we do — furnace
+                Today, that standard runs through everything we do: furnace
                 repairs on Calgary's coldest nights, full air conditioning
-                installs, drain cleaning, and water heater replacements —
+                installs, drain cleaning, and water heater replacements,
                 across heating, cooling, and plumbing.
               </p>
             </div>

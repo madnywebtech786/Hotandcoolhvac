@@ -10,7 +10,7 @@ export const deals = [
     title: "Free humidifier",
     subtitle: "with complete furnace installation",
     description:
-      "Book a complete furnace installation and we'll include a whole-home humidifier at no extra cost — balanced humidity all winter, without the separate install fee.",
+      "Book a complete furnace installation and we'll include a whole-home humidifier at no extra cost, for balanced humidity all winter, without the separate install fee.",
     value: "Free",
     valueLabel: "humidifier included",
     terms: "Valid on complete furnace installations only. Cannot be combined with other offers.",
@@ -26,7 +26,7 @@ export const deals = [
     title: "Free thermostat",
     subtitle: "with complete AC installation",
     description:
-      "Install a new air conditioning system with us and get a smart thermostat included — dial in the exact comfort you want from day one.",
+      "Install a new air conditioning system with us and get a smart thermostat included, so you can dial in the exact comfort you want from day one.",
     value: "Free",
     valueLabel: "thermostat included",
     terms: "Valid on complete air conditioning installations only. Cannot be combined with other offers.",
@@ -42,7 +42,7 @@ export const deals = [
     title: "$50 off",
     subtitle: "your first service call",
     description:
-      "First time booking with Hot and Cool HVAC? Take $50 off your first service call — heating, cooling, or plumbing, any issue, anywhere in Calgary Metro.",
+      "First time booking with Hot and Cool HVAC? Take $50 off your first service call: heating, cooling, or plumbing, any issue, anywhere in Calgary Metro.",
     value: "$50",
     valueLabel: "off first visit",
     terms: "Valid for first-time customers only, one redemption per household. Cannot be combined with other offers.",

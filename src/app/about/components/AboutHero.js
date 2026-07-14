@@ -8,7 +8,7 @@ const STATS = [
 
 export default function AboutHero() {
   return (
-    <section className="relative scroll-mt-28 overflow-hidden bg-surface pt-36 pb-0 sm:pt-44">
+    <section className="relative scroll-mt-36 overflow-hidden bg-surface pt-36 pb-0 sm:pt-52">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.4] mask-[radial-gradient(ellipse_80%_50%_at_50%_0%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
@@ -39,7 +39,7 @@ export default function AboutHero() {
         >
           <div className="relative aspect-4/3 overflow-hidden rounded-4xl border border-line shadow-lift sm:aspect-video">
             <Image
-              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1400&auto=format&fit=crop"
+              src="/images/about-hero.webp"
               alt="Hot and Cool HVAC technician working on a heating system in Calgary"
               fill
               priority
@@ -73,7 +73,7 @@ export default function AboutHero() {
           style={{ animationDelay: "0.4s" }}
         >
           Hot and Cool HVAC exists to make heating, cooling, and plumbing
-          problems feel simple again — honest diagnostics, fair pricing, and
+          problems feel simple again, with honest diagnostics, fair pricing, and
           technicians who treat your home like their own.
         </p>
       </div>

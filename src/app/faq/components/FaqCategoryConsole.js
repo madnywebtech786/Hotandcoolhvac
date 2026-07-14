@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Plus } from "lucide-react";
 import { FAQ_CATEGORIES } from "../constants/faqData";
 
-const NAV_OFFSET = 112; // matches scroll-mt-28 used elsewhere for the fixed navbar
+const NAV_OFFSET = 144; // matches scroll-mt-36 used elsewhere for the fixed navbar
 
 export default function FaqCategoryConsole() {
   const [activeKey, setActiveKey] = useState(FAQ_CATEGORIES[0].key);
@@ -59,7 +59,7 @@ export default function FaqCategoryConsole() {
     <section className="relative bg-surface pb-24 sm:pb-32">
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[280px_1fr] lg:gap-12">
-          {/* Category selector rail — scroll-spy driven */}
+          {/* Category selector rail, scroll-spy driven */}
           <div className="lg:sticky lg:top-28 lg:self-start">
             <p className="font-sans text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-faint">
               Browse by category
@@ -152,7 +152,7 @@ export default function FaqCategoryConsole() {
             </div>
           </div>
 
-          {/* Continuous feed — every category's FAQs stacked in their own section */}
+          {/* Continuous feed, every category's FAQs stacked in their own section */}
           <div className="flex flex-col gap-16">
             {FAQ_CATEGORIES.map((category) => (
               <div
@@ -162,7 +162,7 @@ export default function FaqCategoryConsole() {
                 ref={(node) => {
                   sectionRefs.current[category.key] = node;
                 }}
-                className="scroll-mt-28"
+                className="scroll-mt-36"
               >
                 <div className="flex items-center gap-3">
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-line-strong bg-surface-alt text-arc-600">

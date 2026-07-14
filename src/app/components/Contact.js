@@ -51,7 +51,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative scroll-mt-28 overflow-hidden bg-surface-alt py-24 sm:py-32">
+    <section id="contact" className="relative scroll-mt-36 overflow-hidden bg-surface-alt py-24 sm:py-32">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.35] mask-[radial-gradient(ellipse_70%_50%_at_50%_0%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
@@ -77,7 +77,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="tel:+14035550199"
+              href="tel:+14036336911"
               className="group mt-10 inline-flex items-center gap-4 rounded-2xl border border-line bg-surface-raised p-5 shadow-soft transition-colors duration-300 hover:border-arc-300"
             >
               <span className="bg-gradient-brand flex h-12 w-12 shrink-0 items-center justify-center rounded-xl shadow-soft">
@@ -88,7 +88,7 @@ export default function Contact() {
                   Call us directly
                 </span>
                 <span className="mt-0.5 block font-display text-xl font-bold text-ink">
-                  (403) 555-0199
+                  403-633-6911
                 </span>
               </span>
             </a>
@@ -159,7 +159,7 @@ export default function Contact() {
                         required
                         value={form.phone}
                         onChange={handleChange("phone")}
-                        placeholder="(403) 555-0199"
+                        placeholder="403-633-6911"
                         className="w-full rounded-2xl border border-line-strong bg-surface py-3.5 pl-11 pr-4 font-sans text-sm text-ink placeholder:text-ink-faint focus:border-arc-500 focus:outline-none"
                       />
                     </span>

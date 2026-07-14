@@ -33,7 +33,7 @@ export default function MissionVision() {
             </h3>
             <p className="relative mt-3 font-sans text-base leading-relaxed text-ink-soft">
               Deliver honest, precise heating, cooling, and plumbing service
-              to every Calgary homeowner we work with — diagnosing problems
+              to every Calgary homeowner we work with, diagnosing problems
               accurately, explaining them clearly, and fixing them right the
               first time.
             </p>
@@ -54,7 +54,7 @@ export default function MissionVision() {
             </h3>
             <p className="relative mt-3 font-sans text-base leading-relaxed text-white/60">
               To be the HVAC and plumbing company Calgary homeowners
-              recommend without hesitation — known for showing up fast,
+              recommend without hesitation, known for showing up fast,
               working honestly, and standing behind every job we complete.
             </p>
           </div>

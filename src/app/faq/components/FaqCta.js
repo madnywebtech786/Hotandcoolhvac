@@ -14,12 +14,12 @@ export default function FaqCta() {
 
         <p className="mx-auto mt-5 max-w-xl font-sans text-lg leading-relaxed text-ink-soft">
           If you couldn't find your answer above, a real technician is a call
-          away — or send us your details and we'll follow up directly.
+          away, or send us your details and we'll follow up directly.
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-ink p-7 shadow-lift transition-transform duration-300 hover:-translate-y-1"
           >
             <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.06]" />
@@ -31,7 +31,7 @@ export default function FaqCta() {
                 Fastest answer
               </p>
               <p className="mt-2 flex items-center gap-2 font-display text-xl font-bold text-white">
-                (403) 555-0199
+                403-633-6911
                 <ArrowUpRight className="h-4 w-4 text-white/50 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </p>
             </div>

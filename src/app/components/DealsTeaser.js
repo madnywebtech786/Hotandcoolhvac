@@ -41,7 +41,7 @@ export default function DealsTeaser() {
           </p>
         </div>
 
-        {/* Fanned card deck — collapses to a plain stack below lg */}
+        {/* Fanned card deck, collapses to a plain stack below lg */}
         <div className="mt-16 flex flex-col items-center gap-6 lg:mt-24 lg:h-104 lg:flex-row lg:items-center lg:justify-center lg:gap-0">
           {deals.map((deal, index) => {
             const isDrawn = drawnIndex === index;

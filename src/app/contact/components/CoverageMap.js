@@ -1,8 +1,8 @@
 import { MapPin, Navigation } from "lucide-react";
 
 // Rough relative positions (percent of panel) to suggest Calgary's real
-// geographic layout — Airdrie/Cochrane north, Chestermere/Strathmore east,
-// Okotoks/Nanton south, Canmore west in the foothills — without needing an
+// geographic layout: Airdrie/Cochrane north, Chestermere/Strathmore east,
+// Okotoks/Nanton south, Canmore west in the foothills, without needing an
 // actual map tile provider.
 const AREAS = [
   { name: "Calgary", top: "50%", left: "48%", primary: true },

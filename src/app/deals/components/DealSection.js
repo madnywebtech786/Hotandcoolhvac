@@ -10,7 +10,7 @@ export default function DealSection({ deal, index }) {
   return (
     <section
       id={deal.id}
-      className={`relative scroll-mt-28 overflow-hidden py-20 sm:py-28 ${
+      className={`relative scroll-mt-36 overflow-hidden py-20 sm:py-28 ${
         index % 2 === 0 ? "bg-surface" : "bg-surface-alt"
       }`}
     >

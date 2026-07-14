@@ -19,10 +19,10 @@ const SLIDES = [
     accent: "trust",
     tail: "engineered for every season.",
     description:
-      "Hot and Cool HVAC delivers precision heating, cooling, and plumbing service across Calgary — honest diagnostics, quality workmanship, and a team that shows up when it matters most.",
+      "Hot and Cool HVAC delivers precision heating, cooling, and plumbing service across Calgary, with honest diagnostics, quality workmanship, and a team that shows up when it matters most.",
     ctaLabel: "Explore our services",
     ctaHref: "#services",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/slide1.webp",
     imageAlt: "HVAC technician servicing a rooftop cooling unit in Calgary",
   },
   {
@@ -31,10 +31,10 @@ const SLIDES = [
     accent: "never quits",
     tail: "on Calgary's coldest nights.",
     description:
-      "From emergency furnace repairs to full high-efficiency installs, our licensed technicians keep your home warm with fast, honest heating service — 24/7, every day of the year.",
+      "From emergency furnace repairs to full high-efficiency installs, our licensed technicians keep your home warm with fast, honest heating service, 24/7, every day of the year.",
     ctaLabel: "View heating services",
     ctaHref: "#services",
-    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/slide2.webp",
     imageAlt: "Technician inspecting a residential furnace heating system",
   },
   {
@@ -46,7 +46,7 @@ const SLIDES = [
       "Right-sized AC installs, fast repairs, and seasonal tune-ups that keep your system efficient and your home cool when Calgary summers hit their peak.",
     ctaLabel: "View cooling services",
     ctaHref: "#services",
-    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/slide3.webp",
     imageAlt: "Hot and Cool HVAC technician completing an air conditioning service call",
   },
   {
@@ -55,10 +55,10 @@ const SLIDES = [
     accent: "right",
     tail: "the first time, every time.",
     description:
-      "Drain cleaning, water heaters, Poly-B replacement, and emergency leak response — handled by technicians who diagnose the real problem before they touch a wrench.",
+      "Drain cleaning, water heaters, Poly-B replacement, and emergency leak response, handled by technicians who diagnose the real problem before they touch a wrench.",
     ctaLabel: "View plumbing services",
     ctaHref: "#services",
-    image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/slide4.webp",
     imageAlt: "Plumber working on residential pipes and plumbing fixtures",
   },
   {
@@ -70,7 +70,7 @@ const SLIDES = [
       "Heating, cooling, and plumbing emergencies don't wait for business hours, and neither do we. Talk to a real technician, day or night, anywhere in Calgary Metro.",
     ctaLabel: "See all services",
     ctaHref: "#services",
-    image: "https://images.unsplash.com/photo-1518481852452-9415b262eba4?q=80&w=1200&auto=format&fit=crop",
+    image: "/images/slide5.webp",
     imageAlt: "Technician responding to an emergency home service call at night",
   },
 ];
@@ -109,7 +109,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-32 pb-24 sm:px-8 sm:pt-36 lg:flex-row lg:items-center lg:gap-12 lg:pb-32">
+      <div className="relative mx-auto flex max-w-7xl flex-col gap-16 px-6 pt-36 pb-24 sm:px-8 sm:pt-44 lg:flex-row lg:items-center lg:gap-12 lg:pb-32">
         {/* Copy column */}
         <div key={activeIndex} className="relative z-10 flex-1">
           <div
@@ -175,12 +175,12 @@ export default function Hero() {
             style={{ animationDelay: "0.35s" }}
           >
             <a
-              href="tel:+14035550199"
+              href="tel:+14036336911"
               className="group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-full bg-ink px-7 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
             >
               <span className="bg-gradient-brand absolute inset-0 -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0" />
               <Phone className="relative z-10 h-4 w-4" strokeWidth={2.25} />
-              <span className="relative z-10">Call (403) 555-0199</span>
+              <span className="relative z-10">Call 403-633-6911</span>
             </a>
 
             <a

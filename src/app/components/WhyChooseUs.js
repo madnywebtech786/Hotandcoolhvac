@@ -51,11 +51,11 @@ export default function WhyChooseUs() {
             </ul>
 
             <a
-              href="tel:+14035550199"
+              href="tel:+14036336911"
               className="group mt-10 inline-flex items-center justify-center gap-2.5 rounded-full bg-ink px-7 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
             >
               <Phone className="h-4 w-4" strokeWidth={2.25} />
-              Call (403) 555-0199
+              Call 403-633-6911
             </a>
           </div>
 
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
             <div className="relative mx-auto max-w-lg overflow-hidden rounded-4xl border border-line shadow-lift lg:max-w-none">
               <div className="relative aspect-4/5">
                 <Image
-                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop"
+                  src="/images/whychooseus.webp"
                   alt="Hot and Cool HVAC technician completing a home service call in Calgary"
                   fill
                   sizes="(min-width: 1024px) 45vw, 90vw"

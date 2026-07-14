@@ -20,12 +20,12 @@ export default function ServiceCta({ service }) {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             className="group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-full bg-ink px-8 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
           >
             <span className="bg-gradient-brand absolute inset-0 -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0" />
             <Phone className="relative z-10 h-4 w-4" strokeWidth={2.25} />
-            <span className="relative z-10">Call (403) 555-0199</span>
+            <span className="relative z-10">Call 403-633-6911</span>
           </a>
 
           <Link

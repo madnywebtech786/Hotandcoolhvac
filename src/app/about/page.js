@@ -9,6 +9,9 @@ export const metadata = {
   title: "About Us | Hot and Cool HVAC",
   description:
     "Hot and Cool HVAC is a Calgary-based heating, cooling, and plumbing company built on honest diagnostics, quality workmanship, and straightforward communication.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

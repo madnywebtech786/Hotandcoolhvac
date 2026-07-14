@@ -1,7 +1,7 @@
 import { User, ShieldCheck } from "lucide-react";
 
 /*
-  PLACEHOLDER TEAM CONTENT — replace every name, role, and bio below with
+  PLACEHOLDER TEAM CONTENT: replace every name, role, and bio below with
   real staff details (and swap the icon avatar for an actual photo) before
   this goes live. Nothing here represents an actual Hot and Cool HVAC employee.
 */

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { CATEGORY_ORDER } from "../constants/serviceMeta";
 
@@ -8,6 +9,7 @@ const NAV_LINKS = [
   { label: "Our Team", href: "/team" },
   { label: "Services", href: "/#services" },
   { label: "Deals", href: "/deals" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Working areas", href: "/#working-areas" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -22,18 +24,29 @@ export default function Footer() {
       <div className="relative mx-auto max-w-7xl px-6 pt-20 sm:px-8">
         {/* Oversized brand mark + direct lines */}
         <div className="flex flex-col justify-between gap-10 border-b border-white/10 pb-14 lg:flex-row lg:items-end">
-          <div>
-            <p className="font-display text-5xl font-bold leading-none tracking-tight text-white sm:text-6xl">
-              Hot<span className="text-gradient-brand">&amp;</span>Cool
-            </p>
-            <p className="mt-3 font-sans text-xs font-semibold uppercase tracking-[0.25em] text-white/40">
-              HVAC &amp; Plumbing — Calgary
-            </p>
+          <div className="flex items-center gap-4">
+            <Image
+              src="/images/logo.png"
+              alt="Hot and Cool HVAC"
+              width={160}
+              height={180}
+              className="-mt-3 h-20 w-auto sm:-mt-3.5 sm:h-24"
+            />
+            <div className="flex flex-col justify-center">
+              <p className="font-display text-5xl font-bold leading-none tracking-tight sm:text-6xl">
+                <span className="text-gradient-brand">Hot</span>
+                <span className="text-white">&amp;</span>
+                <span className="text-gradient-brand">Cool</span>
+              </p>
+              <p className="mt-3 font-sans text-xs font-semibold uppercase tracking-[0.25em] text-white/40">
+                HVAC &amp; Plumbing, Calgary
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
             <a
-              href="tel:+14035550199"
+              href="tel:+14036336911"
               className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/3 px-5 py-4 backdrop-blur-sm transition-colors duration-300 hover:border-white/20"
             >
               <span className="bg-gradient-brand flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-lift">
@@ -44,7 +57,7 @@ export default function Footer() {
                   Call anytime
                 </span>
                 <span className="mt-0.5 flex items-center gap-1.5 font-display text-lg font-bold text-white">
-                  (403) 555-0199
+                  403-633-6911
                   <ArrowUpRight className="h-4 w-4 text-white/40 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </span>
               </span>

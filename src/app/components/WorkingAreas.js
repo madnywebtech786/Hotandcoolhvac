@@ -11,7 +11,7 @@ const AREAS = [
 
 export default function WorkingAreas() {
   return (
-    <section id="working-areas" className="relative scroll-mt-28 overflow-hidden bg-surface py-28 sm:py-36">
+    <section id="working-areas" className="relative scroll-mt-36 overflow-hidden bg-surface py-28 sm:py-36">
       <div className="pointer-events-none absolute inset-0 bg-grid opacity-[0.35] mask-[radial-gradient(ellipse_70%_60%_at_50%_50%,black,transparent)]" />
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-8">
@@ -40,7 +40,7 @@ export default function WorkingAreas() {
           our technicians are already on their way.
         </p>
 
-        {/* Dispatch manifest on mobile — each community gets its own full-width row
+        {/* Dispatch manifest on mobile, each community gets its own full-width row
             instead of competing for space in a row of chips or a fleeting marquee. */}
         <div className="mt-12 flex flex-col divide-y divide-line border-y border-line sm:hidden">
           {AREAS.map((area, index) => (
@@ -61,7 +61,7 @@ export default function WorkingAreas() {
           ))}
         </div>
 
-        {/* Marquee ticker of areas served — sm and up, where there's room for it to breathe */}
+        {/* Marquee ticker of areas served, sm and up, where there's room for it to breathe */}
         <div className="relative mt-16 hidden overflow-hidden border-y border-line py-5 sm:block">
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-40 bg-linear-to-r from-surface to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-40 bg-linear-to-l from-surface to-transparent" />
@@ -99,7 +99,7 @@ export default function WorkingAreas() {
 
         <div className="mt-14 flex justify-center">
           <a
-            href="tel:+14035550199"
+            href="tel:+14036336911"
             className="bg-gradient-brand inline-flex items-center justify-center gap-2.5 rounded-full px-8 py-4 font-sans text-sm font-semibold text-white shadow-lift transition-transform duration-300 hover:-translate-y-0.5"
           >
             Confirm service in my area

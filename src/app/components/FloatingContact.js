@@ -1,17 +1,18 @@
 import { FacebookIcon, InstagramIcon, TikTokIcon, WhatsAppIcon } from "./BrandIcons";
+import { siteConfig } from "../constants/siteConfig";
 
 const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#", Icon: FacebookIcon },
-  { label: "Instagram", href: "#", Icon: InstagramIcon },
-  { label: "TikTok", href: "#", Icon: TikTokIcon },
+  { label: "Facebook", href: siteConfig.social.facebook, Icon: FacebookIcon },
+  { label: "Instagram", href: siteConfig.social.instagram, Icon: InstagramIcon },
+  { label: "TikTok", href: siteConfig.social.tiktok, Icon: TikTokIcon },
 ];
 
-const WHATSAPP_HREF = "https://wa.me/14035550199";
+const WHATSAPP_HREF = "https://wa.me/14036336911";
 
 export default function FloatingContact() {
   return (
     <>
-      {/* Sticky social cluster — center-right of the viewport */}
+      {/* Sticky social cluster, center-right of the viewport */}
       <div
         aria-label="Follow us on social media"
         className="fixed right-3 top-1/2 z-40 hidden -translate-y-1/2 flex-col gap-2.5 sm:right-4 sm:flex lg:right-6"
@@ -30,7 +31,7 @@ export default function FloatingContact() {
         ))}
       </div>
 
-      {/* WhatsApp button — fixed bottom-right, all breakpoints */}
+      {/* WhatsApp button, fixed bottom-right, all breakpoints */}
       <a
         href={WHATSAPP_HREF}
         target="_blank"
@@ -42,7 +43,7 @@ export default function FloatingContact() {
         <WhatsAppIcon className="h-6 w-6 sm:h-7 sm:w-7" />
       </a>
 
-      {/* Mobile fallback for the social cluster — inline row above the WhatsApp button */}
+      {/* Mobile fallback for the social cluster, inline row above the WhatsApp button */}
       <div
         aria-label="Follow us on social media"
         className="fixed bottom-24 right-4 z-40 flex flex-col gap-2.5 sm:hidden"

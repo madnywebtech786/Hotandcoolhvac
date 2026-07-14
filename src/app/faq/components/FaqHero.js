@@ -3,7 +3,7 @@ import { FAQ_CATEGORIES, TOTAL_FAQ_COUNT } from "../constants/faqData";
 
 export default function FaqHero() {
   return (
-    <section className="relative overflow-hidden bg-surface pt-32 pb-16 sm:pt-40 sm:pb-20">
+    <section className="relative overflow-hidden bg-surface pt-36 pb-16 sm:pt-48 sm:pb-20">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-grid opacity-[0.4] mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
         <div className="animate-drift absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-arc-100/70 blur-3xl" />
@@ -61,7 +61,7 @@ export default function FaqHero() {
           </div>
         </div>
 
-        {/* Category scanner — chip row with per-category counts (the category
+        {/* Category scanner, chip row with per-category counts (the category
             rail below already covers this job on mobile, so it's desktop-only here) */}
         <div
           className="animate-rise-in mt-14 hidden flex-wrap gap-3 border-t border-line pt-8 sm:flex"

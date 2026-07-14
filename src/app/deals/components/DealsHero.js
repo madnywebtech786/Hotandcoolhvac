@@ -3,7 +3,7 @@ import { deals } from "../../constants/dealsData";
 
 export default function DealsHero() {
   return (
-    <section className="relative overflow-hidden bg-surface pt-32 pb-20 sm:pt-40 sm:pb-24">
+    <section className="relative overflow-hidden bg-surface pt-36 pb-20 sm:pt-48 sm:pb-24">
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute inset-0 bg-grid opacity-[0.5] mask-[radial-gradient(ellipse_80%_60%_at_50%_0%,black,transparent)]" />
         <div className="animate-drift absolute -top-32 -left-24 h-[28rem] w-[28rem] rounded-full bg-arc-100/70 blur-3xl" />
@@ -52,7 +52,7 @@ export default function DealsHero() {
               style={{ animationDelay: "0.25s" }}
             >
               Three active offers, wired straight from installation to
-              savings — no fine-print maze, just what you get and how to
+              savings, no fine-print maze, just what you get and how to
               claim it.
             </p>
 

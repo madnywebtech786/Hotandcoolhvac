@@ -11,7 +11,7 @@ const REASONS = [
     icon: Clock3,
     title: "Always available",
     description:
-      "Heating, cooling, and plumbing emergencies don't wait for business hours — our dispatch doesn't either.",
+      "Heating, cooling, and plumbing emergencies don't wait for business hours, and our dispatch doesn't either.",
   },
   {
     icon: Wrench,
@@ -23,7 +23,7 @@ const REASONS = [
     icon: MessageSquare,
     title: "Honest communication",
     description:
-      "You'll always know what's wrong, what it costs, and why — explained in plain language, not jargon.",
+      "You'll always know what's wrong, what it costs, and why, explained in plain language, not jargon.",
   },
   {
     icon: Award,
@@ -35,7 +35,7 @@ const REASONS = [
     icon: Users,
     title: "Local & accountable",
     description:
-      "We're a Calgary business serving Calgary homeowners — our reputation here is what keeps us honest.",
+      "We're a Calgary business serving Calgary homeowners. Our reputation here is what keeps us honest.",
   },
 ];
 

@@ -1,5 +1,5 @@
 // A horizontal schematic trace connecting an icon node to a terminal node,
-// styled like current flowing through a circuit — the signature visual
+// styled like current flowing through a circuit, the signature visual
 // device of the Deals page. `flip` mirrors the flow direction for
 // alternating sections.
 export default function CircuitTrace({ flip = false }) {

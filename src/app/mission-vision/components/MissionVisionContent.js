@@ -5,7 +5,7 @@ const VALUES = [
     icon: ShieldCheck,
     title: "Honesty first",
     description:
-      "We diagnose before we recommend. If a repair is the right call, that's what we say — no upselling, no unnecessary replacements.",
+      "We diagnose before we recommend. If a repair is the right call, that's what we say, with no upselling and no unnecessary replacements.",
   },
   {
     icon: Gauge,
@@ -49,7 +49,7 @@ export default function MissionVisionContent() {
             </h2>
             <p className="relative mt-4 font-sans text-base leading-relaxed text-ink-soft sm:text-lg">
               Deliver honest, precise heating, cooling, and plumbing service
-              to every Calgary homeowner we work with — diagnosing problems
+              to every Calgary homeowner we work with, diagnosing problems
               accurately, explaining them clearly, and fixing them right the
               first time. Comfort shouldn't come with confusion or guesswork,
               and we built Hot and Cool HVAC to prove it doesn't have to.
@@ -71,7 +71,7 @@ export default function MissionVisionContent() {
             </h2>
             <p className="relative mt-4 font-sans text-base leading-relaxed text-white/60 sm:text-lg">
               To be the HVAC and plumbing company Calgary homeowners
-              recommend without hesitation — known for showing up fast,
+              recommend without hesitation, known for showing up fast,
               working honestly, and standing behind every job we complete,
               from routine tune-ups to the coldest 2 a.m. emergency calls.
             </p>
