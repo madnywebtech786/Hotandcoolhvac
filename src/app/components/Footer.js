@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "Mission & Vision", href: "/mission-vision" },
   { label: "Our Team", href: "/team" },
   { label: "Services", href: "/#services" },
+  { label: "Deals", href: "/deals" },
   { label: "Working areas", href: "/#working-areas" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },

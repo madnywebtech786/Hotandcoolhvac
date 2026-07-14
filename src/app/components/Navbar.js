@@ -15,6 +15,7 @@ const ABOUT_LINKS = [
 const HOME_LINK = { label: "Home", href: "/" };
 
 const NAV_LINKS = [
+  { label: "Deals", href: "/deals" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];

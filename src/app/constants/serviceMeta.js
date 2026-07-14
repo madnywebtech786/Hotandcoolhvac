@@ -14,6 +14,8 @@ import {
   ArrowDownToLine,
   FlaskConical,
   Wind,
+  CloudRain,
+  Filter,
 } from "lucide-react";
 
 export const CATEGORY_ORDER = ["Heating", "Cooling", "Plumbing", "HVAC"];
@@ -39,6 +41,8 @@ export const SERVICE_ICONS = {
   "tankless-water-heater-installation-services": FlaskConical,
   "tankless-water-heater-repair-services": FlaskConical,
   "residential-duct-cleaning": Wind,
+  "humidifier-installation": CloudRain,
+  "water-purification-system": Filter,
 };
 
 export const SERVICE_SUMMARIES = {
@@ -82,4 +86,8 @@ export const SERVICE_SUMMARIES = {
     "Specialized diagnostics and repair for tankless water heating systems.",
   "residential-duct-cleaning":
     "Cleaner air and better HVAC efficiency through professional duct cleaning.",
+  "humidifier-installation":
+    "Whole-home humidifiers that fix dry winter air, static shock, and cracked floors.",
+  "water-purification-system":
+    "Whole-home filtration for cleaner, better-tasting water at every tap.",
 };

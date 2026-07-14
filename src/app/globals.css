@@ -83,6 +83,10 @@
   --shadow-lift: var(--shadow-lift);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-surface);
   color: var(--color-ink);
@@ -190,6 +194,13 @@ body {
   to { transform: scaleX(1); }
 }
 
+/* Current "flowing" along a circuit trace — used on the Deals page schematic lines. */
+@keyframes circuit-flow {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
 .animate-drift {
   animation: drift 18s ease-in-out infinite;
 }
@@ -217,4 +228,8 @@ body {
 .animate-meter-fill {
   animation: meter-fill 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
   transform-origin: left;
+}
+
+.animate-circuit-flow {
+  animation: circuit-flow 1.4s linear infinite;
 }

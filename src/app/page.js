@@ -1,6 +1,7 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
+import DealsTeaser from "./components/DealsTeaser";
 import WhyChooseUs from "./components/WhyChooseUs";
 import WorkingAreas from "./components/WorkingAreas";
 import Testimonials from "./components/Testimonials";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <DealsTeaser />
       <WhyChooseUs />
       <WorkingAreas />
       <CallToAction />

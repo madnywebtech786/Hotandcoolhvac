@@ -22,6 +22,8 @@ const SLIDES = [
       "Hot and Cool HVAC delivers precision heating, cooling, and plumbing service across Calgary — honest diagnostics, quality workmanship, and a team that shows up when it matters most.",
     ctaLabel: "Explore our services",
     ctaHref: "#services",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "HVAC technician servicing a rooftop cooling unit in Calgary",
   },
   {
     eyebrow: "Furnaces & boilers",
@@ -32,6 +34,8 @@ const SLIDES = [
       "From emergency furnace repairs to full high-efficiency installs, our licensed technicians keep your home warm with fast, honest heating service — 24/7, every day of the year.",
     ctaLabel: "View heating services",
     ctaHref: "#services",
+    image: "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Technician inspecting a residential furnace heating system",
   },
   {
     eyebrow: "Air conditioning",
@@ -42,6 +46,8 @@ const SLIDES = [
       "Right-sized AC installs, fast repairs, and seasonal tune-ups that keep your system efficient and your home cool when Calgary summers hit their peak.",
     ctaLabel: "View cooling services",
     ctaHref: "#services",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Hot and Cool HVAC technician completing an air conditioning service call",
   },
   {
     eyebrow: "Plumbing",
@@ -52,6 +58,8 @@ const SLIDES = [
       "Drain cleaning, water heaters, Poly-B replacement, and emergency leak response — handled by technicians who diagnose the real problem before they touch a wrench.",
     ctaLabel: "View plumbing services",
     ctaHref: "#services",
+    image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Plumber working on residential pipes and plumbing fixtures",
   },
   {
     eyebrow: "24/7 emergency support",
@@ -62,6 +70,8 @@ const SLIDES = [
       "Heating, cooling, and plumbing emergencies don't wait for business hours, and neither do we. Talk to a real technician, day or night, anywhere in Calgary Metro.",
     ctaLabel: "See all services",
     ctaHref: "#services",
+    image: "https://images.unsplash.com/photo-1518481852452-9415b262eba4?q=80&w=1200&auto=format&fit=crop",
+    imageAlt: "Technician responding to an emergency home service call at night",
   },
 ];
 
@@ -260,14 +270,19 @@ export default function Hero() {
             </svg>
 
             <div className="relative aspect-4/5 overflow-hidden rounded-4xl border border-line bg-steel-100 shadow-lift">
-              <Image
-                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1200&auto=format&fit=crop"
-                alt="HVAC technician servicing a rooftop cooling unit in Calgary"
-                fill
-                priority
-                sizes="(min-width: 1024px) 40vw, 90vw"
-                className="object-cover"
-              />
+              {SLIDES.map((s, index) => (
+                <Image
+                  key={s.image}
+                  src={s.image}
+                  alt={s.imageAlt}
+                  fill
+                  priority={index === 0}
+                  sizes="(min-width: 1024px) 40vw, 90vw"
+                  className={`object-cover transition-opacity duration-700 ease-in-out ${
+                    index === activeIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
               <div className="absolute inset-0 bg-linear-to-t from-ink/50 via-transparent to-transparent" />
             </div>
 

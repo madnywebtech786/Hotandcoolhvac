@@ -2626,5 +2626,269 @@ export const services = [
         answer: 'We provide thorough, professional duct cleaning services using advanced equipment to improve indoor air quality, HVAC efficiency, and overall home comfort.'
       }
     ]
+  },
+  {
+    slug: 'humidifier-installation',
+    title: 'Humidifier Installation',
+    category: 'Heating',
+    image: '',
+    seo: {
+      metaTitle: 'Humidifier Installation Calgary | Whole-Home Furnace Humidifiers | Hot and Cool HVAC',
+      metaDescription: 'Hot and Cool HVAC installs whole-home furnace humidifiers in Calgary to fix dry winter air, static shock, cracked skin, and damaged wood floors. Licensed technicians, honest sizing, and 24/7 emergency support.'
+    },
+    hero: {
+      title: 'Professional Humidifier Installation Services in Calgary',
+      description: "Calgary winters pull moisture out of the air fast, and a furnace running for months on end only makes it worse. Dry indoor air shows up as static shocks at every doorknob, cracked skin and irritated sinuses, creaking hardwood floors, and furniture joints that loosen year after year. Hot and Cool HVAC installs whole-home humidifiers that connect directly to your existing furnace and ductwork, adding the right amount of moisture back into the air your family breathes every day. Our technicians size and install bypass, fan-powered, and steam humidifiers correctly the first time, so you get balanced humidity all winter without the guesswork of portable units that need constant refilling."
+    },
+    content: [
+      {
+        title: 'Why Calgary Homes Need a Whole-Home Humidifier',
+        paragraphs: [
+          "Furnaces heat air, but they don't add moisture back into it. As outdoor temperatures drop through a Calgary winter, the cold air drawn into your home holds very little humidity to begin with, and your furnace dries it out even further as it circulates. The result is indoor humidity that can fall well below comfortable levels, even though the thermostat reads a normal temperature.",
+          "Low indoor humidity isn't just uncomfortable — it can affect your health, your home, and your energy bills. Dry air makes you feel colder at the same temperature, which often leads homeowners to turn the thermostat up and spend more on heating than necessary. A properly sized whole-home humidifier addresses the root cause instead of masking the symptoms."
+        ]
+      },
+      {
+        title: 'Whole-Home Humidifiers vs. Portable Units',
+        paragraphs: [
+          "Portable humidifiers can help a single room, but they only treat a small area, require frequent refilling, and need regular cleaning to prevent mold and mineral buildup. A whole-home humidifier installed directly onto your furnace and ductwork treats every room your HVAC system reaches, using your home's own water supply so there's no tank to refill.",
+          "At Hot and Cool HVAC, we install and service the three main types of whole-home humidifiers: bypass humidifiers, which use your furnace's airflow to draw water vapor into the duct system; fan-powered humidifiers, which use their own fan for faster, more consistent humidification in larger homes; and steam humidifiers, which generate warm water vapor independently of your furnace's blower for the most precise humidity control."
+        ]
+      },
+      {
+        title: 'Signs Your Home Needs a Humidifier',
+        paragraphs: [
+          'Many homeowners notice the effects of dry indoor air without realizing a whole-home humidifier is the fix. Here are common signs we hear about across Calgary.'
+        ],
+        list: [
+          'Static electricity shocks when touching doorknobs or light switches.',
+          'Dry, cracked skin and chapped lips that worsen indoors.',
+          'Frequent nosebleeds or irritated sinuses during winter.',
+          'Creaking, gapping, or warping hardwood floors.',
+          'Cracking paint or wallpaper seams separating.',
+          'Furniture joints loosening or musical instruments going out of tune.',
+          'Feeling cold even when the thermostat is set normally.',
+          'Persistent dry cough or throat irritation overnight.',
+          'Increased static shock affecting electronics.',
+          'Indoor humidity reading below 30% on a hygrometer.'
+        ]
+      },
+      {
+        title: 'Correct Sizing and Installation Matter',
+        paragraphs: [
+          "A humidifier that's undersized won't keep up with your home's square footage, while an oversized unit can push humidity too high, leading to condensation on windows and, over time, mold growth. Before recommending a system, we calculate the right unit size based on your home's square footage, ceiling height, air leakage, and existing furnace airflow.",
+          "We also integrate the humidifier with your thermostat or a dedicated humidistat, so the system automatically adjusts output as outdoor temperatures change throughout the season, rather than running at a fixed setting regardless of conditions."
+        ]
+      }
+    ],
+    whyChooseUs: {
+      title: 'Why Choose Hot and Cool HVAC for Humidifier Installation?',
+      description: "Installing a whole-home humidifier the wrong way can lead to over-humidification, window condensation, or a system that never keeps up with Calgary's dry winters. At Hot and Cool HVAC, we size every humidifier to your home's actual conditions and integrate it properly with your existing furnace, so you get consistent, comfortable humidity without guesswork or unnecessary upselling.",
+      points: [
+        'Experienced technicians certified in whole-home humidifier installation.',
+        "Accurate sizing based on your home's square footage and furnace airflow.",
+        'Installation of bypass, fan-powered, and steam humidifier systems.',
+        'Proper integration with your thermostat or dedicated humidistat.',
+        'Honest recommendations without unnecessary upselling.',
+        "Quality equipment built for Calgary's dry winter climate.",
+        'Clear communication so you understand how your system works.',
+        'Respectful, clean installation that protects your home.',
+        'Fast response throughout Calgary and surrounding communities.',
+        'Committed to consistent, comfortable indoor humidity all season.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
+      ]
+    },
+    benefits: {
+      title: 'Benefits of Whole-Home Humidifier Installation',
+      items: [
+        'Relieve dry skin, chapped lips, and irritated sinuses.',
+        'Reduce static electricity shocks throughout your home.',
+        'Protect hardwood floors, trim, and furniture from cracking.',
+        'Feel warmer at lower thermostat settings, reducing heating costs.',
+        'Improve sleep quality by easing dry throat and nasal irritation.',
+        'Protect musical instruments and wood furniture from humidity loss.',
+        'Maintain healthier indoor air for children and pets.',
+        'Automatic humidity control tied to outdoor conditions.',
+        'No tank refilling required, unlike portable humidifiers.',
+        'Extend the life of wood flooring and household finishes.',
+        '24/7 emergency support whenever you need it most.'
+      ]
+    },
+    faqs: [
+      {
+        question: 'How do I know if my home needs a whole-home humidifier?',
+        answer: "Common signs include static shocks, dry or cracked skin, creaking hardwood floors, and indoor humidity readings below 30%. If you notice these during Calgary's winter, a whole-home humidifier is usually the fix."
+      },
+      {
+        question: 'What is the ideal indoor humidity level for a home?',
+        answer: 'Most homes are most comfortable between 30% and 50% relative humidity during winter. Levels below 30% typically cause the dry-air symptoms homeowners notice most.'
+      },
+      {
+        question: 'What type of whole-home humidifier is best for my house?',
+        answer: 'It depends on your home\'s size and existing furnace airflow. Bypass humidifiers work well for smaller to mid-sized homes, fan-powered units suit larger homes needing faster humidification, and steam humidifiers offer the most precise control regardless of furnace airflow.'
+      },
+      {
+        question: 'Will a humidifier increase my heating bill?',
+        answer: 'No — in most cases it can lower your effective heating cost. Properly humidified air feels warmer at the same temperature, so many homeowners comfortably lower their thermostat a degree or two after installation.'
+      },
+      {
+        question: 'Can a humidifier cause condensation on my windows?',
+        answer: "Yes, if it's sized or set incorrectly. That's why we calculate proper sizing and integrate a humidistat, so humidity stays in a comfortable range without over-humidifying your home."
+      },
+      {
+        question: 'Does a whole-home humidifier need much maintenance?',
+        answer: 'Whole-home humidifiers need periodic filter or pad replacement, typically once or twice a year, which is far less maintenance than refilling and cleaning portable units throughout the winter.'
+      },
+      {
+        question: 'Can you install a humidifier on any furnace?',
+        answer: 'Most forced-air furnace systems can accommodate a whole-home humidifier. We inspect your existing furnace and ductwork to confirm compatibility and recommend the right unit for your setup.'
+      },
+      {
+        question: 'How long does humidifier installation take?',
+        answer: 'Most whole-home humidifier installations are completed in a single visit, typically within a few hours, depending on your furnace configuration and water line access.'
+      },
+      {
+        question: 'Do you provide emergency humidifier repair services?',
+        answer: 'Yes. If your existing humidifier stops working or is leaking, contact Hot and Cool HVAC for prompt diagnostic and repair service across Calgary.'
+      },
+      {
+        question: 'Why choose Hot and Cool HVAC for humidifier installation?',
+        answer: 'We provide accurate sizing, honest recommendations, and professional installation of whole-home humidifiers, helping Calgary homeowners stay comfortable and protect their homes throughout the dry winter months.'
+      }
+    ]
+  },
+  {
+    slug: 'water-purification-system',
+    title: 'Water Purification System',
+    category: 'Plumbing',
+    image: '',
+    seo: {
+      metaTitle: 'Water Purification System Installation Calgary | Whole-Home Water Filtration | Hot and Cool HVAC',
+      metaDescription: 'Hot and Cool HVAC installs whole-home water purification and filtration systems in Calgary, removing chlorine, sediment, and contaminants for cleaner, better-tasting water at every tap.'
+    },
+    hero: {
+      title: 'Professional Water Purification System Installation in Calgary',
+      description: "Calgary's municipal water is treated to meet safety standards, but treatment chemicals, aging pipes, and seasonal changes in source water can still affect how your water tastes, smells, and feels. Hot and Cool HVAC installs whole-home water purification systems that filter every tap in your house, reducing chlorine taste and odor, sediment, and other contaminants before water ever reaches your glass, shower, or appliances. Our technicians assess your home's water quality and household needs before recommending a system, so you get filtration that matches what's actually in your water rather than a one-size-fits-all unit."
+    },
+    content: [
+      {
+        title: 'Why Calgary Homeowners Choose Whole-Home Water Purification',
+        paragraphs: [
+          "Municipal water treatment keeps Calgary's water supply safe, but the same disinfection process that makes water safe to drink can leave a noticeable chlorine taste and smell. Water also picks up trace sediment and minerals as it travels through the municipal system and your home's own plumbing before it reaches your tap.",
+          "A whole-home water purification system is installed at your home's main water line, so every fixture — kitchen sink, bathroom taps, shower, and water-using appliances — receives filtered water, rather than only the one faucet a countertop or pitcher filter can treat."
+        ]
+      },
+      {
+        title: 'Types of Water Purification Systems We Install',
+        paragraphs: [
+          "Not every home needs the same level of filtration, which is why we install several types of systems depending on your water quality and household priorities.",
+        ],
+        list: [
+          'Whole-home carbon filtration systems for chlorine taste, odor, and sediment.',
+          'Reverse osmosis systems for drinking water at the kitchen tap.',
+          'Sediment pre-filters to protect plumbing and appliances from grit and particulate.',
+          'UV purification systems for additional microbial protection.',
+          'Combination systems pairing whole-home filtration with under-sink reverse osmosis.'
+        ]
+      },
+      {
+        title: 'Signs Your Home Could Benefit from Water Purification',
+        paragraphs: [
+          'Many homeowners notice water quality issues gradually rather than all at once. These are the most common signs we hear about from Calgary homeowners.'
+        ],
+        list: [
+          'Noticeable chlorine taste or smell from tap water.',
+          'Cloudy or slightly discolored water, especially after main breaks nearby.',
+          'Sediment or grit visible in a glass of water left to settle.',
+          'Spots or film left on dishes and glassware after washing.',
+          'Relying on bottled water for drinking or cooking.',
+          'Skin or hair feeling dry after showering.',
+          'Reduced appliance lifespan from mineral or sediment buildup.',
+          'A desire for better-tasting water without daily pitcher refills.'
+        ]
+      },
+      {
+        title: 'Matching the System to Your Water and Your Home',
+        paragraphs: [
+          "Before recommending a system, we discuss what matters most to your household — better-tasting drinking water, reducing chlorine odor throughout the house, protecting plumbing and appliances from sediment, or all three. We size the system to your home's water usage and fixture count so flow and water pressure stay strong at every tap.",
+          "Every installation includes clear guidance on filter change intervals, so your system continues performing as expected long after our technicians leave."
+        ]
+      }
+    ],
+    whyChooseUs: {
+      title: 'Why Choose Hot and Cool HVAC for Water Purification?',
+      description: 'Choosing the right water purification system means understanding what\'s actually affecting your water, not just installing whichever unit is easiest to sell. At Hot and Cool HVAC, we assess your home\'s water quality and household needs first, then recommend and install a system sized correctly for consistent performance and water pressure at every fixture.',
+      points: [
+        'Experienced technicians with whole-home water treatment expertise.',
+        'Assessment of your home\'s specific water quality concerns.',
+        'Installation of carbon, reverse osmosis, UV, and combination systems.',
+        'Sizing that protects water pressure and flow at every fixture.',
+        'Honest recommendations without unnecessary upselling.',
+        'Quality filtration equipment built for long-term reliability.',
+        'Clear guidance on filter maintenance and change intervals.',
+        'Respectful, clean installation that protects your home.',
+        'Fast response throughout Calgary and surrounding communities.',
+        'Committed to cleaner, better-tasting water at every tap.',
+        '24/7 emergency support available across Calgary and surrounding areas.'
+      ]
+    },
+    benefits: {
+      title: 'Benefits of Whole-Home Water Purification',
+      items: [
+        'Reduce chlorine taste and odor at every tap in your home.',
+        'Remove sediment and particulate before it reaches fixtures.',
+        'Enjoy better-tasting drinking and cooking water.',
+        'Protect plumbing fixtures and appliances from buildup.',
+        'Reduce reliance on bottled water for drinking.',
+        'Improve the feel of water for showering and bathing.',
+        'Extend the lifespan of water-using appliances.',
+        'Support healthier skin and hair with filtered water.',
+        'Add long-term value to your home.',
+        'Gain peace of mind about your household water quality.',
+        '24/7 emergency support whenever you need it most.'
+      ]
+    },
+    faqs: [
+      {
+        question: 'Is Calgary tap water safe to drink without a purification system?',
+        answer: "Yes, Calgary's municipal water meets safety standards. A whole-home purification system isn't about making water safe — it's about improving taste, odor, and reducing sediment for a better everyday experience."
+      },
+      {
+        question: 'What\'s the difference between a whole-home filter and a reverse osmosis system?',
+        answer: 'A whole-home filter treats water at the main line for every fixture in your house, while reverse osmosis is typically installed under the kitchen sink for the highest level of filtration on your drinking and cooking water specifically.'
+      },
+      {
+        question: 'Will a water purification system reduce my water pressure?',
+        answer: "Not if it's sized correctly. We size every system to your home's fixture count and water usage so flow and pressure stay strong throughout the house."
+      },
+      {
+        question: 'How often do water filtration systems need new filters?',
+        answer: 'This depends on the system type and your household water usage, but most whole-home filters are changed every 3 to 6 months, while reverse osmosis membranes typically last 1 to 2 years.'
+      },
+      {
+        question: 'Can a water purification system help with hard water?',
+        answer: 'Whole-home purification systems primarily target chlorine, taste, odor, and sediment. If hard water minerals are your main concern, we can pair purification with a dedicated water softener for complete treatment.'
+      },
+      {
+        question: 'Do I need a whole-home system if I already use a pitcher filter?',
+        answer: 'A pitcher filter only treats water you pour into it. A whole-home system filters every tap, shower, and appliance, which most homeowners find far more convenient and thorough.'
+      },
+      {
+        question: 'How long does water purification system installation take?',
+        answer: "Most whole-home installations are completed in a single visit, typically a few hours, depending on your home's plumbing layout and the system selected."
+      },
+      {
+        question: 'Will a purification system remove chlorine smell completely?',
+        answer: 'Carbon-based whole-home filtration significantly reduces chlorine taste and odor for the vast majority of Calgary homes. We\'ll walk you through expected results before installation.'
+      },
+      {
+        question: 'Do you offer emergency repair if my system stops working?',
+        answer: 'Yes. If your existing water purification system fails or you notice a change in water quality, contact Hot and Cool HVAC for prompt diagnostic and repair service.'
+      },
+      {
+        question: 'Why choose Hot and Cool HVAC for water purification installation?',
+        answer: 'We assess your home\'s actual water quality before recommending a system, ensuring you get filtration that solves your specific concerns with reliable, professional installation.'
+      }
+    ]
   }
 ];

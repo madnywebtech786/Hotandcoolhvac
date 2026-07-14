@@ -40,7 +40,7 @@ export default function About() {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="relative aspect-5/4 overflow-hidden rounded-4xl border border-line shadow-lift">
                 <Image
-                  src="https://images.unsplash.com/photo-1581092160607-ee22731c9c93?q=80&w=1200&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?q=80&w=1200&auto=format&fit=crop"
                   alt="Hot and Cool HVAC technician inspecting a residential furnace unit"
                   fill
                   sizes="(min-width: 1024px) 45vw, 90vw"
