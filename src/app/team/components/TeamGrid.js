@@ -1,17 +1,13 @@
-import { User, ShieldCheck } from "lucide-react";
+import Image from "next/image";
+import { ShieldCheck } from "lucide-react";
 
-/*
-  PLACEHOLDER TEAM CONTENT: replace every name, role, and bio below with
-  real staff details (and swap the icon avatar for an actual photo) before
-  this goes live. Nothing here represents an actual Hot and Cool HVAC employee.
-*/
 const TEAM = [
   {
     name: "Denys",
     role: "Lead HVAC Technician",
     bio: "Leads every diagnosis with the same standard: find the real problem before recommending a fix.",
+    image: "/images/team.webp",
   },
-  
 ];
 
 export default function TeamGrid() {
@@ -32,31 +28,42 @@ export default function TeamGrid() {
           </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-14 grid max-w-lg grid-cols-1 gap-8 sm:max-w-none sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((member, index) => (
             <div
               key={member.name + index}
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-line bg-surface-raised p-6 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
+              className="group relative flex flex-col overflow-hidden rounded-4xl border border-line bg-surface-raised shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-lift"
             >
-              <span className="pointer-events-none absolute right-4 top-4 font-display text-2xl font-bold text-ink/8">
-                {String(index + 1).padStart(2, "0")}
-              </span>
+              <div className="relative aspect-3/4 overflow-hidden">
+                <Image
+                  src={member.image}
+                  alt={`${member.name}, ${member.role} at Hot and Cool HVAC`}
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 90vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-ink/70 via-ink/5 to-transparent" />
 
-              <div className="bg-gradient-brand relative flex h-16 w-16 items-center justify-center rounded-2xl shadow-soft">
-                <User className="h-7 w-7 text-white" strokeWidth={1.75} />
+                <span className="pointer-events-none absolute right-4 top-4 font-display text-2xl font-bold text-white/25">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+
+                <div className="absolute bottom-4 left-4 right-4 flex items-center gap-2 rounded-full border border-white/15 bg-ink/60 px-3.5 py-2 backdrop-blur-md">
+                  <ShieldCheck className="h-3.5 w-3.5 shrink-0 text-arc-300" strokeWidth={2.25} />
+                  <span className="font-sans text-xs font-semibold uppercase tracking-wider text-white">
+                    {member.role}
+                  </span>
+                </div>
               </div>
 
-              <h3 className="mt-5 font-display text-lg font-semibold leading-snug text-ink">
-                {member.name}
-              </h3>
-              <p className="mt-1 flex items-center gap-1.5 font-sans text-xs font-semibold uppercase tracking-wider text-arc-600">
-                <ShieldCheck className="h-3.5 w-3.5" strokeWidth={2.25} />
-                {member.role}
-              </p>
-
-              <p className="mt-3 flex-1 font-sans text-sm leading-relaxed text-ink-soft">
-                {member.bio}
-              </p>
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="font-display text-lg font-semibold leading-snug text-ink">
+                  {member.name}
+                </h3>
+                <p className="mt-2 flex-1 font-sans text-sm leading-relaxed text-ink-soft">
+                  {member.bio}
+                </p>
+              </div>
             </div>
           ))}
         </div>
