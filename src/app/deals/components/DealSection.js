@@ -90,7 +90,7 @@ export default function DealSection({ deal, index }) {
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-ember-500" />
                 </span>
                 <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-ink-faint">
-                  Active now
+                  Active till {deal.activeUntil}
                 </span>
               </div>
             </div>
