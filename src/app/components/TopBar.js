@@ -1,4 +1,5 @@
 import { Phone, Mail } from "lucide-react";
+import { siteConfig } from "../constants/siteConfig";
 
 export default function TopBar() {
   return (
@@ -13,11 +14,11 @@ export default function TopBar() {
         </div>
 
         <a
-          href="mailto:hotandcoolhvacltd@gmail.com"
+          href={`mailto:${siteConfig.email}`}
           className="flex min-w-0 items-center gap-1.5 font-sans text-[11px] font-medium text-white/70 transition-colors hover:text-white sm:text-xs"
         >
           <Mail className="h-3.5 w-3.5 shrink-0" strokeWidth={2} />
-          <span className="truncate">hotandcoolhvacltd@gmail.com</span>
+          <span className="truncate">{siteConfig.email}</span>
         </a>
 
         <a

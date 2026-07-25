@@ -6,7 +6,7 @@ export const siteConfig = {
   url: "https://www.hotandcoolhvac.ca",
   phone: "+14036336911",
   phoneDisplay: "403-633-6911",
-  email: "hotandcoolhvacltd@gmail.com",
+  email: "info@hotandcoolhvac.ca",
   areaServed: [
     "Calgary",
     "Airdrie",
