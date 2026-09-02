@@ -21,8 +21,7 @@ export const galleryImages = [
   { src: "/images/gallery/project-20.webp", width: 900, height: 1600 },
   { src: "/images/gallery/project-21.webp", width: 900, height: 1600 },
   { src: "/images/gallery/project-22.webp", width: 900, height: 1600 },
-  { src: "/images/gallery/project-23.webp", width: 900, height: 1600 },
-  { src: "/images/gallery/project-24.webp", width: 1200, height: 1600 },
+  { src: "/images/gallery/project-23.webp", width: 1200, height: 1600 },
 ].map((image, index) => ({
   id: `project-${index + 1}`,
   alt: `Hot and Cool HVAC project photo ${index + 1}`,
