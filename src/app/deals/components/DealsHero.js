@@ -51,7 +51,7 @@ export default function DealsHero() {
               className="animate-rise-in mt-6 max-w-xl font-sans text-lg leading-relaxed text-ink-soft"
               style={{ animationDelay: "0.25s" }}
             >
-              Three active offers, wired straight from installation to
+              Active offers, wired straight from installation to
               savings, no fine-print maze, just what you get and how to
               claim it.
             </p>

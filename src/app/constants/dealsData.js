@@ -1,4 +1,4 @@
-import { CloudRain, Thermometer, BadgePercent } from "lucide-react";
+import { CloudRain, Thermometer } from "lucide-react";
 
 export const deals = [
   {
@@ -14,7 +14,6 @@ export const deals = [
     value: "Free",
     valueLabel: "humidifier included",
     terms: "Valid on complete furnace installations only. Cannot be combined with other offers.",
-    activeUntil: "August 2026",
     ctaHref: "/services/furnace-installation",
     ctaLabel: "View furnace installation",
   },
@@ -31,25 +30,7 @@ export const deals = [
     value: "Free",
     valueLabel: "thermostat included",
     terms: "Valid on complete air conditioning installations only. Cannot be combined with other offers.",
-    activeUntil: "August 2026",
     ctaHref: "/services/air-conditioning-installation",
     ctaLabel: "View AC installation",
-  },
-  {
-    id: "first-time-25-off",
-    code: "DEAL-03",
-    spec: "SYS-NEW · $25 CREDIT",
-    icon: BadgePercent,
-    eyebrow: "New customers",
-    title: "$25 off",
-    subtitle: "your first service call",
-    description:
-      "First time booking with Hot and Cool HVAC? Take $25 off your first service call: heating, cooling, or plumbing, any issue, anywhere in Calgary Metro.",
-    value: "$25",
-    valueLabel: "off first visit",
-    terms: "Valid for first-time customers only, one redemption per household. Cannot be combined with other offers.",
-    activeUntil: "August 2026",
-    ctaHref: "/contact",
-    ctaLabel: "Book your first visit",
   },
 ];

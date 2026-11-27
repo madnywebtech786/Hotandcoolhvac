@@ -83,16 +83,6 @@ export default function DealSection({ deal, index }) {
               <p className="relative mt-3 font-sans text-sm font-semibold text-ink-soft">
                 {deal.valueLabel}
               </p>
-
-              <div className="relative mt-6 flex items-center justify-center gap-1.5 border-t border-line pt-5">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-ember-500 opacity-60" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-ember-500" />
-                </span>
-                <span className="font-mono text-[10px] font-semibold uppercase tracking-wider text-ink-faint">
-                  Active till {deal.activeUntil}
-                </span>
-              </div>
             </div>
           </div>
         </div>

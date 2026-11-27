@@ -6,9 +6,8 @@ import { ArrowRight, ArrowUpRight, Radio } from "lucide-react";
 import { deals } from "../constants/dealsData";
 
 const FAN_TRANSFORMS = [
-  "lg:-rotate-6 lg:-translate-x-16 lg:translate-y-3",
   "lg:rotate-0 lg:translate-y-0",
-  "lg:rotate-6 lg:translate-x-16 lg:translate-y-3",
+  "lg:rotate-0 lg:translate-y-0",
 ];
 
 export default function DealsTeaser() {
@@ -42,7 +41,7 @@ export default function DealsTeaser() {
         </div>
 
         {/* Fanned card deck, collapses to a plain stack below lg */}
-        <div className="mt-16 flex flex-col items-center gap-6 lg:mt-24 lg:h-104 lg:flex-row lg:items-center lg:justify-center lg:gap-0">
+        <div className="mt-16 flex flex-col items-center gap-6 lg:mt-24 lg:h-104 lg:flex-row lg:items-center lg:justify-center lg:gap-8">
           {deals.map((deal, index) => {
             const isDrawn = drawnIndex === index;
 
